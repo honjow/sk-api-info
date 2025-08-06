@@ -1,0 +1,138 @@
+name: Sync SK-ChimeraOS
+
+on:
+  # 1. 实时触发：接收来自 3003n/chimeraos 的 release 事件
+  repository_dispatch:
+    types: [chimeraos_release]
+  
+  # 2. 手动触发：支持参数化控制
+  workflow_dispatch:
+    inputs:
+      specific_tag:
+        description: '指定要同步的 tag (可选，留空则同步所有新版本)'
+        required: false
+        type: string
+      force_resync:
+        description: '强制重新同步所有版本'
+        required: false
+        type: boolean
+        default: false
+      max_releases:
+        description: '最大处理的 release 数量'
+        required: false
+        type: number
+        default: 10
+  
+  # 3. 定时备用：每天 UTC 02:00 检查一次
+  schedule:
+    - cron: '0 2 * * *'
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+      
+      - name: Setup environment
+        run: |
+          # 安装必要的工具
+          sudo apt-get update
+          sudo apt-get install -y jq curl
+          
+          # 设置 Git 配置
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+      
+      - name: Determine sync parameters
+        id: params
+        run: |
+          # 根据触发方式设置参数
+          if [[ "${{ github.event_name }}" == "repository_dispatch" ]]; then
+            echo "trigger_type=dispatch" >> $GITHUB_OUTPUT
+            echo "specific_tag=${{ github.event.client_payload.tag }}" >> $GITHUB_OUTPUT
+            echo "force_resync=false" >> $GITHUB_OUTPUT
+            echo "max_releases=1" >> $GITHUB_OUTPUT
+            echo "🔥 实时触发: 处理新发布的版本 ${{ github.event.client_payload.tag }}"
+          elif [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            echo "trigger_type=manual" >> $GITHUB_OUTPUT
+            echo "specific_tag=${{ github.event.inputs.specific_tag }}" >> $GITHUB_OUTPUT
+            echo "force_resync=${{ github.event.inputs.force_resync }}" >> $GITHUB_OUTPUT
+            echo "max_releases=${{ github.event.inputs.max_releases }}" >> $GITHUB_OUTPUT
+            echo "🎯 手动触发: 用户控制同步"
+          else
+            echo "trigger_type=schedule" >> $GITHUB_OUTPUT
+            echo "specific_tag=" >> $GITHUB_OUTPUT
+            echo "force_resync=false" >> $GITHUB_OUTPUT
+            echo "max_releases=5" >> $GITHUB_OUTPUT
+            echo "⏰ 定时触发: 日常同步检查"
+          fi
+      
+      - name: Run sync script
+        run: |
+          chmod +x .github/scripts/sync-chimeraos.sh
+          .github/scripts/sync-chimeraos.sh \
+            "${{ steps.params.outputs.trigger_type }}" \
+            "${{ steps.params.outputs.specific_tag }}" \
+            "${{ steps.params.outputs.force_resync }}" \
+            "${{ steps.params.outputs.max_releases }}"
+      
+      - name: Commit and push changes
+        run: |
+          # 检查是否有变更
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "✨ 没有检测到变更，跳过提交"
+            exit 0
+          fi
+          
+          # 添加变更并提交
+          git add sk-chimeraos/
+          
+          # 生成提交消息
+          trigger_type="${{ steps.params.outputs.trigger_type }}"
+          specific_tag="${{ steps.params.outputs.specific_tag }}"
+          
+          case "$trigger_type" in
+            "dispatch")
+              if [[ -n "$specific_tag" ]]; then
+                commit_msg="sync: add ChimeraOS release $specific_tag checksums"
+              else
+                commit_msg="sync: add new ChimeraOS release checksums"
+              fi
+              ;;
+            "manual")
+              commit_msg="sync: manual ChimeraOS releases update"
+              ;;
+            "schedule")
+              commit_msg="sync: scheduled ChimeraOS releases update"
+              ;;
+            *)
+              commit_msg="sync: update ChimeraOS releases"
+              ;;
+          esac
+          
+          # 提交变更
+          git commit -m "$commit_msg"
+          git push origin HEAD
+          
+          echo "🚀 变更已成功推送到仓库"
+      
+      - name: Summary report
+        if: always()
+        run: |
+          echo ""
+          echo "📊 同步执行报告"
+          echo "=================="
+          echo "🔗 触发方式: ${{ steps.params.outputs.trigger_type }}"
+          echo "🏷️  指定标签: ${{ steps.params.outputs.specific_tag || '无' }}"
+          echo "🔄 强制重新同步: ${{ steps.params.outputs.force_resync }}"
+          echo "📊 最大处理数量: ${{ steps.params.outputs.max_releases }}"
+          echo "⏱️  执行时间: $(date)"
+          echo "✅ 执行状态: 完成"
