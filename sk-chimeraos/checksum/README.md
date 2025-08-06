@@ -22,14 +22,14 @@ checksum/
 最新版本: **50-4_f6d09f1**
 
 最新版本包含的 checksum 文件：
+- sha256sum-gnome.txt
+- sha256sum-gnome-nv.txt
+- sha256sum-kde.txt
 - sha256sum-cinnamon.txt
 - sha256sum-cosmic.txt
-- sha256sum-gnome-nv.txt
-- sha256sum-gnome.txt
 - sha256sum-hyprland.txt
-- sha256sum-kde-full.txt
 - sha256sum-kde-nv.txt
-- sha256sum-kde.txt
+- sha256sum-kde-full.txt
 
 ---
-*最后更新: 2025-08-06 19:35:42 UTC*
+*最后更新: 2025-08-06 19:47:59 UTC*
