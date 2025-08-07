@@ -69,7 +69,7 @@ get_releases_data() {
   if ! api_response=$(curl -s \
       -H "Accept: application/vnd.github+json" \
       -H "X-GitHub-Api-Version: 2022-11-28" \
-      "${RELEASES_API_URL}?per_page=15" 2>/dev/null); then
+      "${RELEASES_API_URL}?per_page=40" 2>/dev/null); then
       log_error "API 请求失败"
       return 1
   fi
