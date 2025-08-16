@@ -261,6 +261,27 @@ download_checksum_files() {
   return 0
 }
 
+# 过滤 API 数据，只保留必要字段
+filter_api_data() {
+  local api_data="$1"
+  
+  # 使用 jq 过滤掉不必要的字段，只保留 get_img_url 函数需要的字段
+  echo "$api_data" | jq '[
+    .[] | {
+      created_at,
+      prerelease,
+      name,
+      assets: [
+        .assets[] | {
+          browser_download_url,
+          state,
+          name
+        }
+      ]
+    }
+  ]'
+}
+
 # 更新 release.json 文件
 update_release_json() {
   local api_data="$1"
@@ -270,10 +291,22 @@ update_release_json() {
   # 确保目录存在
   mkdir -p "$TARGET_DIR"
   
-  # 保存完整的 API 响应
-  echo "$api_data" > "$RELEASE_JSON"
+  # 过滤并保存精简的 API 响应
+  local filtered_data
+  if ! filtered_data=$(filter_api_data "$api_data"); then
+    log_error "数据过滤失败"
+    return 1
+  fi
   
-  log_success "release.json 已更新"
+  echo "$filtered_data" > "$RELEASE_JSON"
+  
+  # 计算文件大小
+  local file_size
+  file_size=$(stat -c%s "$RELEASE_JSON" 2>/dev/null || echo "0")
+  local formatted_size
+  formatted_size=$(format_size "$file_size")
+  
+  log_success "release.json 已更新 (精简后: $formatted_size)"
 }
 
 # 创建目录索引文件
