@@ -69,7 +69,7 @@ get_releases_data() {
   if ! api_response=$(curl -s \
       -H "Accept: application/vnd.github+json" \
       -H "X-GitHub-Api-Version: 2022-11-28" \
-      "${RELEASES_API_URL}?per_page=40" 2>/dev/null); then
+      "${RELEASES_API_URL}?per_page=${MAX_RELEASES}" 2>/dev/null); then
       log_error "API 请求失败"
       return 1
   fi
@@ -370,6 +370,64 @@ EOF
   log_success "目录索引已创建"
 }
 
+# 清理多余的 checksum 目录
+cleanup_obsolete_checksums() {
+  local api_data="$1"
+  
+  log_info "清理多余的 checksum 目录..."
+  
+  # 获取 API 中的所有有效版本标签
+  local api_tags
+  api_tags=$(echo "$api_data" | jq -r '.[] | .name' | sed -n 's/ChimeraOS \([0-9-]*\) (\([^)]*\)).*/\1_\2/p' | sort)
+  
+  if [[ -z "$api_tags" ]]; then
+    log_warning "无法从 API 数据中提取版本标签"
+    return 1
+  fi
+  
+  # 获取本地 checksum 目录列表
+  local local_dirs
+  if [[ -d "$CHECKSUM_DIR" ]]; then
+    local_dirs=$(find "$CHECKSUM_DIR" -maxdepth 1 -type d -name "*_*" -exec basename {} \; | sort)
+  else
+    log_info "checksum 目录不存在，跳过清理"
+    return 0
+  fi
+  
+  if [[ -z "$local_dirs" ]]; then
+    log_info "没有本地 checksum 目录需要清理"
+    return 0
+  fi
+  
+  # 找出需要删除的目录
+  local dirs_to_delete
+  dirs_to_delete=$(comm -23 <(echo "$local_dirs") <(echo "$api_tags"))
+  
+  if [[ -z "$dirs_to_delete" ]]; then
+    log_success "所有本地目录都与 API 数据一致"
+    return 0
+  fi
+  
+  # 删除多余的目录
+  local deleted_count=0
+  while read -r dir_name; do
+    [[ -z "$dir_name" ]] && continue
+    
+    local dir_path="${CHECKSUM_DIR}/${dir_name}"
+    if [[ -d "$dir_path" ]]; then
+      log_info "删除多余目录: $dir_name"
+      rm -rf "$dir_path"
+      deleted_count=$((deleted_count + 1))
+    fi
+  done <<< "$dirs_to_delete"
+  
+  if [[ $deleted_count -gt 0 ]]; then
+    log_success "已清理 $deleted_count 个多余的 checksum 目录"
+  fi
+  
+  return 0
+}
+
 # 清理和维护目录结构
 manage_directory_structure() {
   log_info "管理目录结构..."
@@ -433,6 +491,11 @@ main() {
           failed_count=$((failed_count + 1))
       fi
   done <<< "$new_releases"
+  
+  # 清理多余的 checksum 目录
+  if ! cleanup_obsolete_checksums "$api_data"; then
+      log_warning "清理多余目录失败，但不影响主要功能"
+  fi
   
   # 管理目录结构
   if ! manage_directory_structure; then

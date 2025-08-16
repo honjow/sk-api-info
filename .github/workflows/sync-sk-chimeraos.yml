@@ -62,7 +62,7 @@ jobs:
             echo "trigger_type=dispatch" >> $GITHUB_OUTPUT
             echo "specific_tag=${{ github.event.client_payload.tag }}" >> $GITHUB_OUTPUT
             echo "force_resync=true" >> $GITHUB_OUTPUT
-            echo "max_releases=1" >> $GITHUB_OUTPUT
+            echo "max_releases=50" >> $GITHUB_OUTPUT
             echo "🔥 实时触发: 处理新发布的版本 ${{ github.event.client_payload.tag }}"
           elif [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
             echo "trigger_type=manual" >> $GITHUB_OUTPUT
@@ -74,7 +74,7 @@ jobs:
             echo "trigger_type=schedule" >> $GITHUB_OUTPUT
             echo "specific_tag=" >> $GITHUB_OUTPUT
             echo "force_resync=true" >> $GITHUB_OUTPUT
-            echo "max_releases=5" >> $GITHUB_OUTPUT
+            echo "max_releases=50" >> $GITHUB_OUTPUT
             echo "⏰ 定时触发: 日常同步检查"
           fi
       
