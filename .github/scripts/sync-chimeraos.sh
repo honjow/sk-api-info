@@ -10,12 +10,38 @@ TRIGGER_TYPE="${1:-schedule}"
 SPECIFIC_TAG="${2:-}"
 FORCE_RESYNC="${3:-false}"
 MAX_RELEASES="${4:-10}"
+ENABLE_CLEANUP="${5:-auto}"  # auto/true/false - 是否启用清理功能
 
 # 参数验证
 if ! [[ "$MAX_RELEASES" =~ ^[0-9]+$ ]]; then
-  echo "❌ MAX_RELEASES 必须是数字: $MAX_RELEASES"
+  echo "❌ MAX_RELEASES 必须是数字: $MAX_RELEASES" >&2
   exit 1
 fi
+
+if [[ "$ENABLE_CLEANUP" != "auto" && "$ENABLE_CLEANUP" != "true" && "$ENABLE_CLEANUP" != "false" ]]; then
+  echo "❌ ENABLE_CLEANUP 必须是 auto/true/false: $ENABLE_CLEANUP" >&2
+  exit 1
+fi
+
+# 计算 API 获取数量的智能函数
+calculate_api_limit() {
+  local local_count=0
+  
+  # 统计本地 checksum 目录数量
+  if [[ -d "$CHECKSUM_DIR" ]]; then
+    local_count=$(find "$CHECKSUM_DIR" -maxdepth 1 -type d -name "*_*" 2>/dev/null | wc -l)
+  fi
+  
+  # 计算需要的 API 数据量：本地数量 + 缓冲区 (20个)
+  local api_limit=$((local_count + 20))
+  
+  # 返回 max(计算值, MAX_RELEASES) 确保不小于用户指定值
+  if [[ $api_limit -gt $MAX_RELEASES ]]; then
+    echo $api_limit
+  else
+    echo $MAX_RELEASES
+  fi
+}
 
 # 常量配置
 readonly CHIMERAOS_REPO="3003n/chimeraos"
@@ -65,11 +91,17 @@ format_size() {
 get_releases_data() {
   log_info "正在获取 ChimeraOS releases 信息..."
   
+  # 计算实际需要的 API 数据量
+  local api_limit
+  api_limit=$(calculate_api_limit)
+  
+  log_info "API 请求数量: $api_limit (本地目录: $(find "$CHECKSUM_DIR" -maxdepth 1 -type d -name "*_*" 2>/dev/null | wc -l), 处理限制: $MAX_RELEASES)"
+  
   local api_response
   if ! api_response=$(curl -s \
       -H "Accept: application/vnd.github+json" \
       -H "X-GitHub-Api-Version: 2022-11-28" \
-      "${RELEASES_API_URL}?per_page=${MAX_RELEASES}" 2>/dev/null); then
+      "${RELEASES_API_URL}?per_page=${api_limit}" 2>/dev/null); then
       log_error "API 请求失败"
       return 1
   fi
@@ -124,12 +156,12 @@ detect_new_releases() {
   
   local new_tags
   if [[ -n "$processed_tags" && "$FORCE_RESYNC" != "true" ]]; then
-      # 过滤出新版本
+      # 过滤出新版本，但限制处理数量
       local processed_json
       processed_json=$(printf '%s\n' "$processed_tags" | jq -R . | jq -s .)
       new_tags=$(echo "$api_data" | jq -r --argjson processed \
-          "$processed_json" \
-          '.[] | select(.tag_name as $tag | $processed | index($tag) | not) | .tag_name')
+          "$processed_json" --argjson max "$MAX_RELEASES" \
+          '.[] | select(.tag_name as $tag | $processed | index($tag) | not) | .tag_name' | head -n "$MAX_RELEASES")
   else
       # 如果强制重新同步或没有历史记录，处理最新的几个版本
       new_tags=$(echo "$api_data" | jq -r --argjson max "$MAX_RELEASES" '.[:$max] | .[].tag_name')
@@ -370,11 +402,49 @@ EOF
   log_success "目录索引已创建"
 }
 
+# 判断是否应该执行清理
+should_cleanup() {
+  local api_count="$1"
+  local local_count="$2"
+  
+  case "$ENABLE_CLEANUP" in
+    "true")
+      return 0  # 强制清理
+      ;;
+    "false")
+      return 1  # 禁用清理
+      ;;
+    "auto")
+      # 智能判断：只有 API 数据 >= 本地目录数时才清理
+      if [[ $api_count -ge $local_count ]]; then
+        return 0
+      else
+        return 1
+      fi
+      ;;
+  esac
+}
+
 # 清理多余的 checksum 目录
 cleanup_obsolete_checksums() {
   local api_data="$1"
   
-  log_info "清理多余的 checksum 目录..."
+  # 统计数量
+  local api_count
+  api_count=$(echo "$api_data" | jq '. | length')
+  local local_count=0
+  if [[ -d "$CHECKSUM_DIR" ]]; then
+    local_count=$(find "$CHECKSUM_DIR" -maxdepth 1 -type d -name "*_*" 2>/dev/null | wc -l)
+  fi
+  
+  # 判断是否应该清理
+  if ! should_cleanup "$api_count" "$local_count"; then
+    log_warning "跳过清理: API 数据($api_count) < 本地目录($local_count)，或清理被禁用"
+    log_info "如需强制清理，请使用参数: ENABLE_CLEANUP=true"
+    return 0
+  fi
+  
+  log_info "清理多余的 checksum 目录... (API: $api_count, 本地: $local_count)"
   
   # 获取 API 中的所有有效版本标签
   local api_tags
@@ -457,6 +527,7 @@ main() {
   [[ -n "$SPECIFIC_TAG" ]] && log_info "指定标签: $SPECIFIC_TAG"
   [[ "$FORCE_RESYNC" == "true" ]] && log_info "强制重新同步: 是"
   log_info "最大处理数量: $MAX_RELEASES"
+  log_info "清理模式: $ENABLE_CLEANUP"
   echo ""
   
   # 获取 API 数据

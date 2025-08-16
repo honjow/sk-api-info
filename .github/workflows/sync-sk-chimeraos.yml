@@ -22,6 +22,15 @@ on:
         required: false
         type: number
         default: 10
+      enable_cleanup:
+        description: '清理模式 (auto: 智能判断, true: 强制清理, false: 禁用清理)'
+        required: false
+        type: choice
+        options:
+          - auto
+          - true
+          - false
+        default: auto
   
   # 3. 定时备用：每天 UTC 02:00 检查一次
   schedule:
@@ -62,19 +71,22 @@ jobs:
             echo "trigger_type=dispatch" >> $GITHUB_OUTPUT
             echo "specific_tag=${{ github.event.client_payload.tag }}" >> $GITHUB_OUTPUT
             echo "force_resync=true" >> $GITHUB_OUTPUT
-            echo "max_releases=50" >> $GITHUB_OUTPUT
+            echo "max_releases=1" >> $GITHUB_OUTPUT
+            echo "enable_cleanup=false" >> $GITHUB_OUTPUT  # 实时触发只处理新版本，不清理
             echo "🔥 实时触发: 处理新发布的版本 ${{ github.event.client_payload.tag }}"
           elif [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
             echo "trigger_type=manual" >> $GITHUB_OUTPUT
             echo "specific_tag=${{ github.event.inputs.specific_tag }}" >> $GITHUB_OUTPUT
             echo "force_resync=${{ github.event.inputs.force_resync }}" >> $GITHUB_OUTPUT
             echo "max_releases=${{ github.event.inputs.max_releases }}" >> $GITHUB_OUTPUT
+            echo "enable_cleanup=${{ github.event.inputs.enable_cleanup }}" >> $GITHUB_OUTPUT
             echo "🎯 手动触发: 用户控制同步"
           else
             echo "trigger_type=schedule" >> $GITHUB_OUTPUT
             echo "specific_tag=" >> $GITHUB_OUTPUT
             echo "force_resync=true" >> $GITHUB_OUTPUT
-            echo "max_releases=50" >> $GITHUB_OUTPUT
+            echo "max_releases=30" >> $GITHUB_OUTPUT
+            echo "enable_cleanup=auto" >> $GITHUB_OUTPUT  # 定时触发使用智能清理
             echo "⏰ 定时触发: 日常同步检查"
           fi
       
@@ -85,7 +97,8 @@ jobs:
             "${{ steps.params.outputs.trigger_type }}" \
             "${{ steps.params.outputs.specific_tag }}" \
             "${{ steps.params.outputs.force_resync }}" \
-            "${{ steps.params.outputs.max_releases }}"
+            "${{ steps.params.outputs.max_releases }}" \
+            "${{ steps.params.outputs.enable_cleanup }}"
       
       - name: Commit and push changes
         run: |
@@ -137,5 +150,6 @@ jobs:
           echo "🏷️  指定标签: ${{ steps.params.outputs.specific_tag || '无' }}"
           echo "🔄 强制重新同步: ${{ steps.params.outputs.force_resync }}"
           echo "📊 最大处理数量: ${{ steps.params.outputs.max_releases }}"
+          echo "🧹 清理模式: ${{ steps.params.outputs.enable_cleanup }}"
           echo "⏱️  执行时间: $(date)"
           echo "✅ 执行状态: 完成"
