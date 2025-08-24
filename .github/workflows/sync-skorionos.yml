@@ -107,9 +107,13 @@ jobs:
             echo "✨ 没有检测到变更，跳过提交"
             exit 0
           fi
+
+          # 复制 skorionos 目录为 sk-chimeraos 目录，兼容旧版本
+          rm -rf sk-chimeraos
+          cp -r skorionos sk-chimeraos
           
           # 添加变更并提交
-          git add skorionos/
+          git add skorionos/ sk-chimeraos/
           
           # 生成提交消息
           trigger_type="${{ steps.params.outputs.trigger_type }}"
