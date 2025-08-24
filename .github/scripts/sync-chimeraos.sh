@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# SK-ChimeraOS Sync Script
+# SkorionOS Sync Script
 # 用于同步 3003n/skorionos 仓库的 release 信息和 checksum 文件
 
 set -euo pipefail
@@ -44,9 +44,9 @@ calculate_api_limit() {
 }
 
 # 常量配置
-readonly CHIMERAOS_REPO="3003n/skorionos"
+readonly SkorionOS_REPO="3003n/skorionos"
 readonly API_BASE_URL="https://api.github.com"
-readonly RELEASES_API_URL="${API_BASE_URL}/repos/${CHIMERAOS_REPO}/releases"
+readonly RELEASES_API_URL="${API_BASE_URL}/repos/${SkorionOS_REPO}/releases"
 readonly TARGET_DIR="skorionos"
 readonly CHECKSUM_DIR="${TARGET_DIR}/checksum"
 readonly RELEASE_JSON="${TARGET_DIR}/release.json"
@@ -89,7 +89,7 @@ format_size() {
 
 # 获取 GitHub API 数据
 get_releases_data() {
-  log_info "正在获取 ChimeraOS releases 信息..."
+  log_info "正在获取 SkorionOS releases 信息..."
   
   # 计算实际需要的 API 数据量
   local api_limit
@@ -348,7 +348,7 @@ create_directory_index() {
   log_info "创建目录索引文件..."
   
   cat > "$index_file" << 'EOF'
-# ChimeraOS Checksums
+# SkorionOS Checksums
 
 这个目录包含了从 [3003n/skorionos](https://github.com/3003n/skorionos) 同步的 release checksum 文件。
 
@@ -448,7 +448,7 @@ cleanup_obsolete_checksums() {
   
   # 获取 API 中的所有有效版本标签
   local api_tags
-  api_tags=$(echo "$api_data" | jq -r '.[] | .name' | sed -n 's/ChimeraOS \([0-9-]*\) (\([^)]*\)).*/\1_\2/p' | sort)
+  api_tags=$(echo "$api_data" | jq -r '.[] | .name' | sed -n 's/SkorionOS \([0-9-]*\) (\([^)]*\)).*/\1_\2/p' | sort)
   
   if [[ -z "$api_tags" ]]; then
     log_warning "无法从 API 数据中提取版本标签"
@@ -522,7 +522,7 @@ main() {
   local start_time
   start_time=$(date +%s)
   
-  log_info "🚀 开始同步 SK-ChimeraOS releases..."
+  log_info "🚀 开始同步 SK-SkorionOS releases..."
   log_info "触发方式: $TRIGGER_TYPE"
   [[ -n "$SPECIFIC_TAG" ]] && log_info "指定标签: $SPECIFIC_TAG"
   [[ "$FORCE_RESYNC" == "true" ]] && log_info "强制重新同步: 是"

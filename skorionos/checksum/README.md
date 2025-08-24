@@ -1,4 +1,4 @@
-# ChimeraOS Checksums
+# SkorionOS Checksums
 
 这个目录包含了从 [3003n/skorionos](https://github.com/3003n/skorionos) 同步的 release checksum 文件。
 

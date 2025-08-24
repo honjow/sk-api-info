@@ -1,4 +1,4 @@
-name: Sync SK-ChimeraOS
+name: Sync SkorionOS
 
 on:
   # 1. 实时触发：接收来自 3003n/skorionos 的 release 事件
@@ -118,19 +118,19 @@ jobs:
           case "$trigger_type" in
             "dispatch")
               if [[ -n "$specific_tag" ]]; then
-                commit_msg="sync: add ChimeraOS release $specific_tag checksums"
+                commit_msg="sync: add SkorionOS release $specific_tag checksums"
               else
-                commit_msg="sync: add new ChimeraOS release checksums"
+                commit_msg="sync: add new SkorionOS release checksums"
               fi
               ;;
             "manual")
-              commit_msg="sync: manual ChimeraOS releases update"
+              commit_msg="sync: manual SkorionOS releases update"
               ;;
             "schedule")
-              commit_msg="sync: scheduled ChimeraOS releases update"
+              commit_msg="sync: scheduled SkorionOS releases update"
               ;;
             *)
-              commit_msg="sync: update ChimeraOS releases"
+              commit_msg="sync: update SkorionOS releases"
               ;;
           esac
           

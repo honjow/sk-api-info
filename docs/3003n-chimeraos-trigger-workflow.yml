@@ -86,7 +86,7 @@ jobs:
       
       - name: Log release information
         run: |
-          echo "🎉 新的 ChimeraOS release 发布!"
+          echo "🎉 新的 SkorionOS release 发布!"
           echo "📦 版本: ${{ steps.release_info.outputs.tag_name }}"
           echo "🔗 链接: ${{ steps.release_info.outputs.release_url }}"
           echo "👤 发布者: ${{ steps.release_info.outputs.author }}"

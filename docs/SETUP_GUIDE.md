@@ -1,12 +1,12 @@
-# SK-ChimeraOS 同步系统设置指南
+# SkorionOS 同步系统设置指南
 
-这个指南将帮助您设置完整的 ChimeraOS releases 自动同步系统。
+这个指南将帮助您设置完整的 SkorionOS releases 自动同步系统。
 
 ## 🎯 系统概述
 
 该系统实现了从 `3003n/skorionos` 仓库到 `sk-api-info` 仓库的自动同步，包括：
 
-- ✅ 实时同步：当 ChimeraOS 发布新版本时自动触发
+- ✅ 实时同步：当 SkorionOS 发布新版本时自动触发
 - ✅ 手动同步：支持参数化的手动触发
 - ✅ 定时同步：每日定时检查作为备用
 - ✅ 智能增量：只下载新版本的 checksum 文件
@@ -63,7 +63,7 @@
 ### 手动触发
 
 在 `sk-api-info` 仓库的 Actions 页面：
-1. 选择 "Sync SK-ChimeraOS" workflow
+1. 选择 "Sync SkorionOS" workflow
 2. 点击 "Run workflow"
 3. 可选参数：
    - **specific_tag**: 指定要同步的版本

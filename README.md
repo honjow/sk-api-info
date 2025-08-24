@@ -1,12 +1,12 @@
 # SK-API-Info
 
-🚀 **SK-ChimeraOS Release Information Sync System**
+🚀 **SkorionOS Release Information Sync System**
 
 这个仓库提供了一个自动化同步系统，用于从 [3003n/skorionos](https://github.com/3003n/skorionos) 仓库同步 release 信息和 checksum 文件。
 
 ## ✨ 特性
 
-- 🔄 **实时同步**: 当 ChimeraOS 发布新版本时自动触发同步
+- 🔄 **实时同步**: 当 SkorionOS 发布新版本时自动触发同步
 - 🎯 **手动控制**: 支持参数化的手动触发同步
 - ⏰ **定时备份**: 每日定时检查，确保不遗漏任何版本
 - 📁 **智能增量**: 只下载新版本，避免重复处理
@@ -43,7 +43,7 @@ sk-api-info/
 ### 手动触发同步
 
 1. 访问本仓库的 [Actions](../../actions) 页面
-2. 选择 "Sync SK-ChimeraOS" workflow
+2. 选择 "Sync SkorionOS" workflow
 3. 点击 "Run workflow"
 4. 可选择特定参数：
    - **specific_tag**: 同步指定版本
@@ -117,4 +117,4 @@ cd sk-api-info
 
 ---
 
-*本仓库是 [SK-ChimeraOS](https://github.com/3003n/skorionos) 项目的配套工具，旨在提供便捷的 release 信息访问。*
+*本仓库是 [SkorionOS](https://github.com/3003n/skorionos) 项目的配套工具，旨在提供便捷的 release 信息访问。*

@@ -4,7 +4,7 @@
 
 set -euo pipefail
 
-echo "🧪 测试 SK-ChimeraOS 同步脚本"
+echo "🧪 测试 SkorionOS 同步脚本"
 echo "================================"
 
 # 检查必要的工具
