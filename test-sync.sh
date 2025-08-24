@@ -21,7 +21,7 @@ done
 # 测试 API 连接
 echo ""
 echo "测试 GitHub API 连接..."
-api_url="https://api.github.com/repos/3003n/chimeraos/releases?per_page=3"
+api_url="https://api.github.com/repos/3003n/skorionos/releases?per_page=3"
 
 if api_response=$(curl -s -H "Accept: application/vnd.github+json" "$api_url"); then
     if echo "$api_response" | jq empty 2>/dev/null; then
@@ -52,7 +52,7 @@ fi
 
 echo ""
 echo "🎯 准备运行同步脚本测试..."
-echo "注意: 这将实际下载文件到 sk-chimeraos/ 目录"
+echo "注意: 这将实际下载文件到 skorionos/ 目录"
 read -p "是否继续? (y/N): " -n 1 -r
 echo
 
@@ -64,23 +64,23 @@ fi
 # 运行同步脚本（只处理最新1个版本）
 echo ""
 echo "运行同步脚本..."
-if ./.github/scripts/sync-chimeraos.sh manual "" false 1; then
+if ./.github/scripts/sync-skorionos.sh manual "" false 1; then
     echo ""
     echo "✅ 同步脚本执行成功"
     
     # 检查结果
-    if [[ -f "sk-chimeraos/release.json" ]]; then
+    if [[ -f "skorionos/release.json" ]]; then
         echo "✅ release.json 文件已创建"
-        latest_in_file=$(jq -r '.[0].tag_name' sk-chimeraos/release.json 2>/dev/null || echo "unknown")
+        latest_in_file=$(jq -r '.[0].tag_name' skorionos/release.json 2>/dev/null || echo "unknown")
         echo "📦 文件中最新版本: $latest_in_file"
     fi
     
-    if [[ -d "sk-chimeraos/checksum" ]]; then
+    if [[ -d "skorionos/checksum" ]]; then
         echo "✅ checksum 目录已创建"
-        dir_count=$(find sk-chimeraos/checksum -maxdepth 1 -type d | wc -l)
+        dir_count=$(find skorionos/checksum -maxdepth 1 -type d | wc -l)
         echo "📁 版本目录数: $((dir_count - 1))"
         
-        if [[ -f "sk-chimeraos/checksum/README.md" ]]; then
+        if [[ -f "skorionos/checksum/README.md" ]]; then
             echo "✅ README.md 索引文件已创建"
         fi
     fi
@@ -89,8 +89,8 @@ if ./.github/scripts/sync-chimeraos.sh manual "" false 1; then
     echo "📊 测试完成总结:"
     echo "- API 连接: ✅"
     echo "- 脚本执行: ✅"
-    echo "- 文件下载: $([ -d sk-chimeraos/checksum ] && echo '✅' || echo '❌')"
-    echo "- 结构创建: $([ -f sk-chimeraos/checksum/README.md ] && echo '✅' || echo '❌')"
+    echo "- 文件下载: $([ -d skorionos/checksum ] && echo '✅' || echo '❌')"
+    echo "- 结构创建: $([ -f skorionos/checksum/README.md ] && echo '✅' || echo '❌')"
     
 else
     echo "❌ 同步脚本执行失败"

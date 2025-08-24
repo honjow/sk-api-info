@@ -2,7 +2,7 @@
 
 🚀 **SK-ChimeraOS Release Information Sync System**
 
-这个仓库提供了一个自动化同步系统，用于从 [3003n/chimeraos](https://github.com/3003n/chimeraos) 仓库同步 release 信息和 checksum 文件。
+这个仓库提供了一个自动化同步系统，用于从 [3003n/skorionos](https://github.com/3003n/skorionos) 仓库同步 release 信息和 checksum 文件。
 
 ## ✨ 特性
 
@@ -19,10 +19,10 @@
 sk-api-info/
 ├── .github/
 │   ├── workflows/
-│   │   └── sync-sk-chimeraos.yml     # 主同步 workflow
+│   │   └── sync-skorionos.yml     # 主同步 workflow
 │   └── scripts/
-│       └── sync-chimeraos.sh         # 核心同步脚本
-├── sk-chimeraos/                     # 同步的数据目录
+│       └── sync-skorionos.sh         # 核心同步脚本
+├── skorionos/                     # 同步的数据目录
 │   ├── release.json                  # GitHub API 响应
 │   └── checksum/                     # checksum 文件
 │       ├── README.md                 # 目录索引
@@ -33,7 +33,7 @@ sk-api-info/
 │       └── ...
 ├── docs/                             # 文档
 │   ├── SETUP_GUIDE.md               # 详细设置指南
-│   └── 3003n-chimeraos-trigger-workflow.yml  # 源仓库的触发 workflow
+│   └── 3003n-skorionos-trigger-workflow.yml  # 源仓库的触发 workflow
 ├── test-sync.sh                     # 测试脚本
 └── README.md                        # 本文件
 ```
@@ -52,7 +52,7 @@ sk-api-info/
 
 ### 自动同步设置
 
-要启用自动同步，需要在 `3003n/chimeraos` 仓库中进行配置。详细步骤请参考 [设置指南](docs/SETUP_GUIDE.md)。
+要启用自动同步，需要在 `3003n/skorionos` 仓库中进行配置。详细步骤请参考 [设置指南](docs/SETUP_GUIDE.md)。
 
 ## 📊 同步数据
 
@@ -85,7 +85,7 @@ cd sk-api-info
 ./test-sync.sh
 
 # 或直接运行同步脚本
-./.github/scripts/sync-chimeraos.sh manual "" false 3
+./.github/scripts/sync-skorionos.sh manual "" false 3
 ```
 
 ## 📖 文档
@@ -104,8 +104,8 @@ cd sk-api-info
 ## 📈 监控状态
 
 - 🟢 **最新同步**: 检查 [Actions](../../actions) 页面的最新运行
-- 📁 **数据状态**: 查看 [sk-chimeraos](sk-chimeraos/) 目录
-- 📊 **版本信息**: 查看 [checksum 索引](sk-chimeraos/checksum/README.md)
+- 📁 **数据状态**: 查看 [skorionos](skorionos/) 目录
+- 📊 **版本信息**: 查看 [checksum 索引](skorionos/checksum/README.md)
 
 ## 🤝 贡献
 
@@ -117,4 +117,4 @@ cd sk-api-info
 
 ---
 
-*本仓库是 [SK-ChimeraOS](https://github.com/3003n/chimeraos) 项目的配套工具，旨在提供便捷的 release 信息访问。*
+*本仓库是 [SK-ChimeraOS](https://github.com/3003n/skorionos) 项目的配套工具，旨在提供便捷的 release 信息访问。*

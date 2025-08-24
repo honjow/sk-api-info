@@ -1,9 +1,9 @@
 name: Sync SK-ChimeraOS
 
 on:
-  # 1. 实时触发：接收来自 3003n/chimeraos 的 release 事件
+  # 1. 实时触发：接收来自 3003n/skorionos 的 release 事件
   repository_dispatch:
-    types: [chimeraos_release]
+    types: [skorionos_release]
   
   # 2. 手动触发：支持参数化控制
   workflow_dispatch:
@@ -92,8 +92,8 @@ jobs:
       
       - name: Run sync script
         run: |
-          chmod +x .github/scripts/sync-chimeraos.sh
-          .github/scripts/sync-chimeraos.sh \
+          chmod +x .github/scripts/sync-skorionos.sh
+          .github/scripts/sync-skorionos.sh \
             "${{ steps.params.outputs.trigger_type }}" \
             "${{ steps.params.outputs.specific_tag }}" \
             "${{ steps.params.outputs.force_resync }}" \
@@ -109,7 +109,7 @@ jobs:
           fi
           
           # 添加变更并提交
-          git add sk-chimeraos/
+          git add skorionos/
           
           # 生成提交消息
           trigger_type="${{ steps.params.outputs.trigger_type }}"

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # SK-ChimeraOS Sync Script
-# 用于同步 3003n/chimeraos 仓库的 release 信息和 checksum 文件
+# 用于同步 3003n/skorionos 仓库的 release 信息和 checksum 文件
 
 set -euo pipefail
 
@@ -44,10 +44,10 @@ calculate_api_limit() {
 }
 
 # 常量配置
-readonly CHIMERAOS_REPO="3003n/chimeraos"
+readonly CHIMERAOS_REPO="3003n/skorionos"
 readonly API_BASE_URL="https://api.github.com"
 readonly RELEASES_API_URL="${API_BASE_URL}/repos/${CHIMERAOS_REPO}/releases"
-readonly TARGET_DIR="sk-chimeraos"
+readonly TARGET_DIR="skorionos"
 readonly CHECKSUM_DIR="${TARGET_DIR}/checksum"
 readonly RELEASE_JSON="${TARGET_DIR}/release.json"
 
@@ -350,7 +350,7 @@ create_directory_index() {
   cat > "$index_file" << 'EOF'
 # ChimeraOS Checksums
 
-这个目录包含了从 [3003n/chimeraos](https://github.com/3003n/chimeraos) 同步的 release checksum 文件。
+这个目录包含了从 [3003n/skorionos](https://github.com/3003n/skorionos) 同步的 release checksum 文件。
 
 ## 目录结构
 
