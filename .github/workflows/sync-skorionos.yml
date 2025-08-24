@@ -28,8 +28,8 @@ on:
         type: choice
         options:
           - auto
-          - true
-          - false
+          - 'true'
+          - 'false'
         default: auto
   
   # 3. 定时备用：每天 UTC 02:00 检查一次
