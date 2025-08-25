@@ -19,6 +19,17 @@ checksum/
 
 ## 最新版本
 
+最新版本: **52_0a14883**
+
+最新版本包含的 checksum 文件：
+- sha256sum-gnome-nv.txt
+- sha256sum-cosmic.txt
+- sha256sum-hyprland.txt
+- sha256sum-cinnamon.txt
+- sha256sum-kde-nv.txt
+- sha256sum-kde-full.txt
+- sha256sum-gnome.txt
+- sha256sum-kde.txt
 
 ---
-*最后更新: 2025-08-25 13:22:04 UTC*
+*最后更新: 2025-08-25 16:35:01 UTC*
