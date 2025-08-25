@@ -303,6 +303,7 @@ filter_api_data() {
       created_at,
       prerelease,
       name,
+      tag_name,
       assets: [
         .assets[] | {
           browser_download_url,
@@ -428,6 +429,7 @@ should_cleanup() {
 # 清理多余的 checksum 目录
 cleanup_obsolete_checksums() {
   local api_data="$1"
+  local processed_versions="$2"  # 新增：实际处理的版本列表
   
   # 统计数量
   local api_count
@@ -448,10 +450,18 @@ cleanup_obsolete_checksums() {
   
   # 获取 API 中的所有有效版本标签
   local api_tags
-  api_tags=$(echo "$api_data" | jq -r '.[] | .name' | sed -n 's/SkorionOS \([0-9-]*\) (\([^)]*\)).*/\1_\2/p' | sort)
+  api_tags=$(echo "$api_data" | jq -r '.[] | .tag_name' | sort)
   
-  if [[ -z "$api_tags" ]]; then
-    log_warning "无法从 API 数据中提取版本标签"
+  # 如果有处理过的版本列表，将其加入到保留列表中
+  local keep_tags="$api_tags"
+  if [[ -n "$processed_versions" ]]; then
+    # 合并API标签和已处理版本，去重排序
+    keep_tags=$(echo -e "$api_tags\n$processed_versions" | sort -u)
+    log_info "保留标签: API($api_count) + 已处理($(echo "$processed_versions" | wc -l)) = $(echo "$keep_tags" | wc -l)"
+  fi
+  
+  if [[ -z "$keep_tags" ]]; then
+    log_warning "无法确定需要保留的版本标签"
     return 1
   fi
   
@@ -469,9 +479,9 @@ cleanup_obsolete_checksums() {
     return 0
   fi
   
-  # 找出需要删除的目录
+  # 找出需要删除的目录（本地有但保留列表中没有的）
   local dirs_to_delete
-  dirs_to_delete=$(comm -23 <(echo "$local_dirs") <(echo "$api_tags"))
+  dirs_to_delete=$(comm -23 <(echo "$local_dirs") <(echo "$keep_tags"))
   
   if [[ -z "$dirs_to_delete" ]]; then
     log_success "所有本地目录都与 API 数据一致"
@@ -552,19 +562,26 @@ main() {
   # 处理每个新版本
   local processed_count=0
   local failed_count=0
+  local processed_versions=""  # 收集已处理的版本
   
   while read -r tag; do
       [[ -z "$tag" ]] && continue
       
       if download_checksum_files "$tag" "$api_data"; then
           processed_count=$((processed_count + 1))
+          # 添加到已处理版本列表
+          if [[ -z "$processed_versions" ]]; then
+            processed_versions="$tag"
+          else
+            processed_versions="$processed_versions"$'\n'"$tag"
+          fi
       else
           failed_count=$((failed_count + 1))
       fi
   done <<< "$new_releases"
   
-  # 清理多余的 checksum 目录
-  if ! cleanup_obsolete_checksums "$api_data"; then
+  # 清理多余的 checksum 目录，传递已处理的版本列表
+  if ! cleanup_obsolete_checksums "$api_data" "$processed_versions"; then
       log_warning "清理多余目录失败，但不影响主要功能"
   fi
   
