@@ -33,4 +33,4 @@ checksum/
 - sha256sum-hyprland-full.txt
 
 ---
-*最后更新: 2025-08-26 11:13:45 UTC*
+*最后更新: 2025-08-27 03:02:27 UTC*
