@@ -12,6 +12,8 @@ FORCE_RESYNC="${3:-false}"
 MAX_RELEASES="${4:-10}"
 ENABLE_CLEANUP="${5:-auto}"  # auto/true/false - 是否启用清理功能
 
+MAX_RELEASES="$(printf "%.0f\n" $MAX_RELEASES)"
+
 # 参数验证
 if ! [[ "$MAX_RELEASES" =~ ^[0-9]+$ ]]; then
   echo "❌ MAX_RELEASES 必须是数字: $MAX_RELEASES" >&2
