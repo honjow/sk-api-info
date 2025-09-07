@@ -19,7 +19,7 @@ checksum/
 
 ## 最新版本
 
-最新版本: **52-4_e5e152d**
+最新版本: **52-4_a483d64**
 
 最新版本包含的 checksum 文件：
 - sha256sum-kde-full.txt
@@ -33,4 +33,4 @@ checksum/
 - sha256sum-hyprland.txt
 
 ---
-*最后更新: 2025-09-07 03:02:06 UTC*
+*最后更新: 2025-09-07 18:19:25 UTC*
