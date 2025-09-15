@@ -21,7 +21,7 @@ done
 # 测试 API 连接
 echo ""
 echo "测试 GitHub API 连接..."
-api_url="https://api.github.com/repos/3003n/skorionos/releases?per_page=3"
+api_url="https://api.github.com/repos/SkorionOS/skorionos/releases?per_page=3"
 
 if api_response=$(curl -s -H "Accept: application/vnd.github+json" "$api_url"); then
     if echo "$api_response" | jq empty 2>/dev/null; then

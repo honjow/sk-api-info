@@ -2,7 +2,7 @@
 
 🚀 **SkorionOS Release Information Sync System**
 
-这个仓库提供了一个自动化同步系统，用于从 [3003n/skorionos](https://github.com/3003n/skorionos) 仓库同步 release 信息和 checksum 文件。
+这个仓库提供了一个自动化同步系统，用于从 [SkorionOS/skorionos](https://github.com/SkorionOS/skorionos) 仓库同步 release 信息和 checksum 文件。
 
 ## ✨ 特性
 
@@ -52,7 +52,7 @@ sk-api-info/
 
 ### 自动同步设置
 
-要启用自动同步，需要在 `3003n/skorionos` 仓库中进行配置。详细步骤请参考 [设置指南](docs/SETUP_GUIDE.md)。
+要启用自动同步，需要在 `SkorionOS/skorionos` 仓库中进行配置。详细步骤请参考 [设置指南](docs/SETUP_GUIDE.md)。
 
 ## 📊 同步数据
 
@@ -117,4 +117,4 @@ cd sk-api-info
 
 ---
 
-*本仓库是 [SkorionOS](https://github.com/3003n/skorionos) 项目的配套工具，旨在提供便捷的 release 信息访问。*
+*本仓库是 [SkorionOS](https://github.com/SkorionOS/skorionos) 项目的配套工具，旨在提供便捷的 release 信息访问。*

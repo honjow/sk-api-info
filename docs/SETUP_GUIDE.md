@@ -4,7 +4,7 @@
 
 ## 🎯 系统概述
 
-该系统实现了从 `3003n/skorionos` 仓库到 `sk-api-info` 仓库的自动同步，包括：
+该系统实现了从 `SkorionOS/skorionos` 仓库到 `sk-api-info` 仓库的自动同步，包括：
 
 - ✅ 实时同步：当 SkorionOS 发布新版本时自动触发
 - ✅ 手动同步：支持参数化的手动触发
@@ -14,7 +14,7 @@
 
 ## 📋 设置步骤
 
-### 1. 在 3003n/skorionos 仓库中设置
+### 1. 在 SkorionOS/skorionos 仓库中设置
 
 #### 1.1 创建 Personal Access Token (PAT)
 
@@ -31,9 +31,9 @@
 
 💡 **权限原理**：PAT 继承您个人账户的权限，因为您同时拥有组织仓库和个人仓库的权限，所以 PAT 可以在它们之间建立连接。
 
-#### 1.2 在 3003n/skorionos 仓库添加 Secret
+#### 1.2 在 SkorionOS/skorionos 仓库添加 Secret
 
-1. 访问 `3003n/skorionos` 仓库设置
+1. 访问 `SkorionOS/skorionos` 仓库设置
 2. 进入 Secrets and variables → Actions
 3. 添加新的 Repository secret：
    - Name: `PAT_SK_API_INFO`
@@ -41,7 +41,7 @@
 
 #### 1.3 添加触发 Workflow
 
-将 `docs/3003n-skorionos-trigger-workflow.yml` 文件复制到 `3003n/skorionos` 仓库的 `.github/workflows/notify-sk-api-info.yml`
+将 `docs/3003n-skorionos-trigger-workflow.yml` 文件复制到 `SkorionOS/skorionos` 仓库的 `.github/workflows/notify-sk-api-info.yml`
 
 ⚠️ **重要**: 修改文件中的 `YOUR_USERNAME` 为实际的用户名！
 
@@ -55,7 +55,7 @@
 
 ### 自动触发（推荐）
 
-当您在 `3003n/skorionos` 发布新 release 时：
+当您在 `SkorionOS/skorionos` 发布新 release 时：
 1. GitHub 自动触发 `notify-sk-api-info.yml` workflow
 2. 该 workflow 向 `sk-api-info` 发送 `repository_dispatch` 事件
 3. `sk-api-info` 自动开始同步新版本的 checksum 文件
@@ -102,7 +102,7 @@ skorionos/
 - 目标仓库名称错误
 
 **解决方案:**
-1. 检查 `3003n/skorionos` 仓库的 `PAT_SK_API_INFO` secret
+1. 检查 `SkorionOS/skorionos` 仓库的 `PAT_SK_API_INFO` secret
 2. 确认 PAT token 有 `repo` 权限
 3. 检查 workflow 文件中的仓库名称
 
@@ -135,7 +135,7 @@ skorionos/
 
 ### 测试自动触发
 
-1. 在 `3003n/skorionos` 创建一个测试 release
+1. 在 `SkorionOS/skorionos` 创建一个测试 release
 2. 检查是否触发了 `sk-api-info` 的同步
 3. 验证同步的文件是否正确
 

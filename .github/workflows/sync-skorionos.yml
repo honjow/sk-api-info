@@ -1,7 +1,7 @@
 name: Sync SkorionOS
 
 on:
-  # 1. 实时触发：接收来自 3003n/skorionos 的 release 事件
+  # 1. 实时触发：接收来自 SkorionOS/skorionos 的 release 事件
   repository_dispatch:
     types: [skorionos_release]
   
