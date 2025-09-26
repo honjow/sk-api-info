@@ -19,11 +19,9 @@ checksum/
 
 ## 最新版本
 
-最新版本: **52-8_7619362**
+最新版本: **52-8_c6ba48d**
 
 最新版本包含的 checksum 文件：
-- sha256sum-cinnamon.txt
-- sha256sum-cosmic.txt
 - sha256sum-kde.txt
 - sha256sum-gnome.txt
 - sha256sum-kde-full.txt
@@ -33,4 +31,4 @@ checksum/
 - sha256sum-gnome-nv.txt
 
 ---
-*最后更新: 2025-09-26 02:59:23 UTC*
+*最后更新: 2025-09-26 20:04:42 UTC*
