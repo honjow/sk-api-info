@@ -1,5 +1,193 @@
 [
   {
+    "created_at": "2025-10-05T14:02:34Z",
+    "prerelease": true,
+    "name": "SkorionOS 52-8 (7a93f63) ",
+    "tag_name": "52-8_7a93f63",
+    "assets": [
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/52-8_7a93f63/build_info-gnome-nv.txt",
+        "state": "uploaded",
+        "name": "build_info-gnome-nv.txt"
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/52-8_7a93f63/build_info-gnome.txt",
+        "state": "uploaded",
+        "name": "build_info-gnome.txt"
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/52-8_7a93f63/build_info-hyprland-full.txt",
+        "state": "uploaded",
+        "name": "build_info-hyprland-full.txt"
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/52-8_7a93f63/build_info-hyprland.txt",
+        "state": "uploaded",
+        "name": "build_info-hyprland.txt"
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/52-8_7a93f63/build_info-kde-full.txt",
+        "state": "uploaded",
+        "name": "build_info-kde-full.txt"
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/52-8_7a93f63/build_info-kde-nv.txt",
+        "state": "uploaded",
+        "name": "build_info-kde-nv.txt"
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/52-8_7a93f63/build_info-kde.txt",
+        "state": "uploaded",
+        "name": "build_info-kde.txt"
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/52-8_7a93f63/container-gnome-nv.txt",
+        "state": "uploaded",
+        "name": "container-gnome-nv.txt"
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/52-8_7a93f63/container-gnome.txt",
+        "state": "uploaded",
+        "name": "container-gnome.txt"
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/52-8_7a93f63/container-hyprland-full.txt",
+        "state": "uploaded",
+        "name": "container-hyprland-full.txt"
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/52-8_7a93f63/container-hyprland.txt",
+        "state": "uploaded",
+        "name": "container-hyprland.txt"
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/52-8_7a93f63/container-kde-full.txt",
+        "state": "uploaded",
+        "name": "container-kde-full.txt"
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/52-8_7a93f63/container-kde-nv.txt",
+        "state": "uploaded",
+        "name": "container-kde-nv.txt"
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/52-8_7a93f63/container-kde.txt",
+        "state": "uploaded",
+        "name": "container-kde.txt"
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/52-8_7a93f63/sha256sum-gnome-nv.txt",
+        "state": "uploaded",
+        "name": "sha256sum-gnome-nv.txt"
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/52-8_7a93f63/sha256sum-gnome.txt",
+        "state": "uploaded",
+        "name": "sha256sum-gnome.txt"
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/52-8_7a93f63/sha256sum-hyprland-full.txt",
+        "state": "uploaded",
+        "name": "sha256sum-hyprland-full.txt"
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/52-8_7a93f63/sha256sum-hyprland.txt",
+        "state": "uploaded",
+        "name": "sha256sum-hyprland.txt"
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/52-8_7a93f63/sha256sum-kde-full.txt",
+        "state": "uploaded",
+        "name": "sha256sum-kde-full.txt"
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/52-8_7a93f63/sha256sum-kde-nv.txt",
+        "state": "uploaded",
+        "name": "sha256sum-kde-nv.txt"
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/52-8_7a93f63/sha256sum-kde.txt",
+        "state": "uploaded",
+        "name": "sha256sum-kde.txt"
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/52-8_7a93f63/skorionos-52-8_7a93f63-gnome-nv.part1-2.img.xz",
+        "state": "uploaded",
+        "name": "skorionos-52-8_7a93f63-gnome-nv.part1-2.img.xz"
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/52-8_7a93f63/skorionos-52-8_7a93f63-gnome-nv.part2-2.img.xz",
+        "state": "uploaded",
+        "name": "skorionos-52-8_7a93f63-gnome-nv.part2-2.img.xz"
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/52-8_7a93f63/skorionos-52-8_7a93f63-gnome.part1-2.img.xz",
+        "state": "uploaded",
+        "name": "skorionos-52-8_7a93f63-gnome.part1-2.img.xz"
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/52-8_7a93f63/skorionos-52-8_7a93f63-gnome.part2-2.img.xz",
+        "state": "uploaded",
+        "name": "skorionos-52-8_7a93f63-gnome.part2-2.img.xz"
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/52-8_7a93f63/skorionos-52-8_7a93f63-hyprland-full.part1-2.img.xz",
+        "state": "uploaded",
+        "name": "skorionos-52-8_7a93f63-hyprland-full.part1-2.img.xz"
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/52-8_7a93f63/skorionos-52-8_7a93f63-hyprland-full.part2-2.img.xz",
+        "state": "uploaded",
+        "name": "skorionos-52-8_7a93f63-hyprland-full.part2-2.img.xz"
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/52-8_7a93f63/skorionos-52-8_7a93f63-hyprland.part1-2.img.xz",
+        "state": "uploaded",
+        "name": "skorionos-52-8_7a93f63-hyprland.part1-2.img.xz"
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/52-8_7a93f63/skorionos-52-8_7a93f63-hyprland.part2-2.img.xz",
+        "state": "uploaded",
+        "name": "skorionos-52-8_7a93f63-hyprland.part2-2.img.xz"
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/52-8_7a93f63/skorionos-52-8_7a93f63-kde-full.part1-3.img.xz",
+        "state": "uploaded",
+        "name": "skorionos-52-8_7a93f63-kde-full.part1-3.img.xz"
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/52-8_7a93f63/skorionos-52-8_7a93f63-kde-full.part2-3.img.xz",
+        "state": "uploaded",
+        "name": "skorionos-52-8_7a93f63-kde-full.part2-3.img.xz"
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/52-8_7a93f63/skorionos-52-8_7a93f63-kde-full.part3-3.img.xz",
+        "state": "uploaded",
+        "name": "skorionos-52-8_7a93f63-kde-full.part3-3.img.xz"
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/52-8_7a93f63/skorionos-52-8_7a93f63-kde-nv.part1-2.img.xz",
+        "state": "uploaded",
+        "name": "skorionos-52-8_7a93f63-kde-nv.part1-2.img.xz"
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/52-8_7a93f63/skorionos-52-8_7a93f63-kde-nv.part2-2.img.xz",
+        "state": "uploaded",
+        "name": "skorionos-52-8_7a93f63-kde-nv.part2-2.img.xz"
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/52-8_7a93f63/skorionos-52-8_7a93f63-kde.part1-2.img.xz",
+        "state": "uploaded",
+        "name": "skorionos-52-8_7a93f63-kde.part1-2.img.xz"
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/52-8_7a93f63/skorionos-52-8_7a93f63-kde.part2-2.img.xz",
+        "state": "uploaded",
+        "name": "skorionos-52-8_7a93f63-kde.part2-2.img.xz"
+      }
+    ]
+  },
+  {
     "created_at": "2025-10-04T15:12:35Z",
     "prerelease": true,
     "name": "SkorionOS 52-8 (2e92d4f) ",
@@ -20501,184 +20689,6 @@
       },
       {
         "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/49-6_15c45d6/sha256sum-kde.txt",
-        "state": "uploaded",
-        "name": "sha256sum-kde.txt"
-      }
-    ]
-  },
-  {
-    "created_at": "2025-05-18T12:35:56Z",
-    "prerelease": false,
-    "name": "ChimeraOS 49-6 (68a5e8c) ",
-    "tag_name": "49-6_68a5e8c",
-    "assets": [
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/49-6_68a5e8c/build_info-cinnamon.txt",
-        "state": "uploaded",
-        "name": "build_info-cinnamon.txt"
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/49-6_68a5e8c/build_info-cosmic.txt",
-        "state": "uploaded",
-        "name": "build_info-cosmic.txt"
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/49-6_68a5e8c/build_info-gnome-nv.txt",
-        "state": "uploaded",
-        "name": "build_info-gnome-nv.txt"
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/49-6_68a5e8c/build_info-gnome.txt",
-        "state": "uploaded",
-        "name": "build_info-gnome.txt"
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/49-6_68a5e8c/build_info-hyprland.txt",
-        "state": "uploaded",
-        "name": "build_info-hyprland.txt"
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/49-6_68a5e8c/build_info-kde-nv.txt",
-        "state": "uploaded",
-        "name": "build_info-kde-nv.txt"
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/49-6_68a5e8c/build_info-kde.txt",
-        "state": "uploaded",
-        "name": "build_info-kde.txt"
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/49-6_68a5e8c/chimeraos-49-6_68a5e8c-cinnamon.part1-2.img.xz",
-        "state": "uploaded",
-        "name": "chimeraos-49-6_68a5e8c-cinnamon.part1-2.img.xz"
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/49-6_68a5e8c/chimeraos-49-6_68a5e8c-cinnamon.part2-2.img.xz",
-        "state": "uploaded",
-        "name": "chimeraos-49-6_68a5e8c-cinnamon.part2-2.img.xz"
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/49-6_68a5e8c/chimeraos-49-6_68a5e8c-cosmic.part1-2.img.xz",
-        "state": "uploaded",
-        "name": "chimeraos-49-6_68a5e8c-cosmic.part1-2.img.xz"
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/49-6_68a5e8c/chimeraos-49-6_68a5e8c-cosmic.part2-2.img.xz",
-        "state": "uploaded",
-        "name": "chimeraos-49-6_68a5e8c-cosmic.part2-2.img.xz"
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/49-6_68a5e8c/chimeraos-49-6_68a5e8c-gnome-nv.part1-2.img.xz",
-        "state": "uploaded",
-        "name": "chimeraos-49-6_68a5e8c-gnome-nv.part1-2.img.xz"
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/49-6_68a5e8c/chimeraos-49-6_68a5e8c-gnome-nv.part2-2.img.xz",
-        "state": "uploaded",
-        "name": "chimeraos-49-6_68a5e8c-gnome-nv.part2-2.img.xz"
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/49-6_68a5e8c/chimeraos-49-6_68a5e8c-gnome.img.xz",
-        "state": "uploaded",
-        "name": "chimeraos-49-6_68a5e8c-gnome.img.xz"
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/49-6_68a5e8c/chimeraos-49-6_68a5e8c-hyprland.part1-2.img.xz",
-        "state": "uploaded",
-        "name": "chimeraos-49-6_68a5e8c-hyprland.part1-2.img.xz"
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/49-6_68a5e8c/chimeraos-49-6_68a5e8c-hyprland.part2-2.img.xz",
-        "state": "uploaded",
-        "name": "chimeraos-49-6_68a5e8c-hyprland.part2-2.img.xz"
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/49-6_68a5e8c/chimeraos-49-6_68a5e8c-kde-nv.part1-2.img.xz",
-        "state": "uploaded",
-        "name": "chimeraos-49-6_68a5e8c-kde-nv.part1-2.img.xz"
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/49-6_68a5e8c/chimeraos-49-6_68a5e8c-kde-nv.part2-2.img.xz",
-        "state": "uploaded",
-        "name": "chimeraos-49-6_68a5e8c-kde-nv.part2-2.img.xz"
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/49-6_68a5e8c/chimeraos-49-6_68a5e8c-kde.part1-2.img.xz",
-        "state": "uploaded",
-        "name": "chimeraos-49-6_68a5e8c-kde.part1-2.img.xz"
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/49-6_68a5e8c/chimeraos-49-6_68a5e8c-kde.part2-2.img.xz",
-        "state": "uploaded",
-        "name": "chimeraos-49-6_68a5e8c-kde.part2-2.img.xz"
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/49-6_68a5e8c/container-cinnamon.txt",
-        "state": "uploaded",
-        "name": "container-cinnamon.txt"
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/49-6_68a5e8c/container-cosmic.txt",
-        "state": "uploaded",
-        "name": "container-cosmic.txt"
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/49-6_68a5e8c/container-gnome-nv.txt",
-        "state": "uploaded",
-        "name": "container-gnome-nv.txt"
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/49-6_68a5e8c/container-gnome.txt",
-        "state": "uploaded",
-        "name": "container-gnome.txt"
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/49-6_68a5e8c/container-hyprland.txt",
-        "state": "uploaded",
-        "name": "container-hyprland.txt"
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/49-6_68a5e8c/container-kde-nv.txt",
-        "state": "uploaded",
-        "name": "container-kde-nv.txt"
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/49-6_68a5e8c/container-kde.txt",
-        "state": "uploaded",
-        "name": "container-kde.txt"
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/49-6_68a5e8c/sha256sum-cinnamon.txt",
-        "state": "uploaded",
-        "name": "sha256sum-cinnamon.txt"
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/49-6_68a5e8c/sha256sum-cosmic.txt",
-        "state": "uploaded",
-        "name": "sha256sum-cosmic.txt"
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/49-6_68a5e8c/sha256sum-gnome-nv.txt",
-        "state": "uploaded",
-        "name": "sha256sum-gnome-nv.txt"
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/49-6_68a5e8c/sha256sum-gnome.txt",
-        "state": "uploaded",
-        "name": "sha256sum-gnome.txt"
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/49-6_68a5e8c/sha256sum-hyprland.txt",
-        "state": "uploaded",
-        "name": "sha256sum-hyprland.txt"
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/49-6_68a5e8c/sha256sum-kde-nv.txt",
-        "state": "uploaded",
-        "name": "sha256sum-kde-nv.txt"
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/49-6_68a5e8c/sha256sum-kde.txt",
         "state": "uploaded",
         "name": "sha256sum-kde.txt"
       }
