@@ -22,14 +22,14 @@ checksum/
 最新版本: **53_551ea85**
 
 最新版本包含的 checksum 文件：
-- sha256sum-kde.txt
-- sha256sum-gnome.txt
 - sha256sum-kde-full.txt
 - sha256sum-hyprland.txt
-- sha256sum-kde-nv.txt
+- sha256sum-kde.txt
 - sha256sum-hyprland-full.txt
-- sha256sum-gnome-full.txt
+- sha256sum-kde-nv.txt
 - sha256sum-gnome-nv.txt
+- sha256sum-gnome.txt
+- sha256sum-gnome-full.txt
 
 ---
-*最后更新: 2025-10-16 02:33:25 UTC*
+*最后更新: 2025-10-17 02:33:26 UTC*
