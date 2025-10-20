@@ -19,7 +19,7 @@ checksum/
 
 ## 最新版本
 
-最新版本: **53-1_42b7302**
+最新版本: **53-1_01f28ee**
 
 最新版本包含的 checksum 文件：
 - sha256sum-kde-full.txt
@@ -32,4 +32,4 @@ checksum/
 - sha256sum-gnome-full.txt
 
 ---
-*最后更新: 2025-10-19 20:26:53 UTC*
+*最后更新: 2025-10-20 00:45:22 UTC*
