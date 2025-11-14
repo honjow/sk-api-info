@@ -71,7 +71,7 @@ jobs:
             echo "trigger_type=dispatch" >> $GITHUB_OUTPUT
             echo "specific_tag=${{ github.event.client_payload.tag }}" >> $GITHUB_OUTPUT
             echo "force_resync=true" >> $GITHUB_OUTPUT
-            echo "max_releases=1" >> $GITHUB_OUTPUT
+            echo "max_releases=10" >> $GITHUB_OUTPUT
             echo "enable_cleanup=false" >> $GITHUB_OUTPUT  # 实时触发只处理新版本，不清理
             echo "🔥 实时触发: 处理新发布的版本 ${{ github.event.client_payload.tag }}"
           elif [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
