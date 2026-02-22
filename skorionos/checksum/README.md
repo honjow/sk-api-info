@@ -28,10 +28,11 @@ checksum/
 - sha256sum-gnome-core.txt
 - sha256sum-gnome.txt
 - sha256sum-kde-full.txt
+- sha256sum-hyprland.txt
 - sha256sum-kde-nv.txt
 - sha256sum-hyprland-full.txt
 - sha256sum-gnome-full.txt
 - sha256sum-gnome-nv.txt
 
 ---
-*最后更新: 2026-02-22 14:59:02 UTC*
+*最后更新: 2026-02-22 16:32:59 UTC*
