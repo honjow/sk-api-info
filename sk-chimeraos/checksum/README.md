@@ -19,7 +19,7 @@ checksum/
 
 ## 最新版本
 
-最新版本: **55-1_804ad42**
+最新版本: **55-1_14cd21e**
 
 最新版本包含的 checksum 文件：
 - sha256sum-hyprland.txt
@@ -35,4 +35,4 @@ checksum/
 - sha256sum-hyprland-core.txt
 
 ---
-*最后更新: 2026-03-07 02:54:56 UTC*
+*最后更新: 2026-03-07 15:22:20 UTC*
