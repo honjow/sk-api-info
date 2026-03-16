@@ -295,6 +295,54 @@ download_checksum_files() {
   return 0
 }
 
+# 下载指定 release 的 delta-manifest 文件
+download_delta_manifest_files() {
+  local tag_name="$1"
+  local api_data="$2"
+  
+  local delta_dir="${TARGET_DIR}/delta/${tag_name}"
+  
+  local release_data
+  release_data=$(echo "$api_data" | jq --arg tag "$tag_name" '.[] | select(.tag_name == $tag)')
+  
+  if [[ -z "$release_data" || "$release_data" == "null" ]]; then
+      return 0
+  fi
+  
+  local delta_files
+  delta_files=$(echo "$release_data" | jq -r \
+      '.assets[] | select(.name | startswith("delta-manifest-")) | 
+       "\(.name)|\(.browser_download_url)|\(.size)"')
+  
+  if [[ -z "$delta_files" ]]; then
+      return 0
+  fi
+  
+  mkdir -p "$delta_dir"
+  
+  local downloaded_count=0
+  
+  while IFS='|' read -r filename download_url file_size; do
+      [[ -z "$filename" ]] && continue
+      
+      local target_file="$delta_dir/$filename"
+      echo "    📥 Delta manifest: $filename ($(format_size $file_size))"
+      
+      if download_file_with_retry "$download_url" "$target_file" "$file_size"; then
+          downloaded_count=$((downloaded_count + 1))
+          echo "    ✅ 完成: $filename"
+      else
+          echo "    ❌ 失败: $filename"
+      fi
+  done <<< "$delta_files"
+  
+  if [[ $downloaded_count -gt 0 ]]; then
+      log_success "版本 $tag_name: 下载了 $downloaded_count 个 delta-manifest 文件"
+  fi
+  
+  return 0
+}
+
 # 过滤 API 数据，只保留必要字段
 filter_api_data() {
   local api_data="$1"
@@ -580,6 +628,9 @@ main() {
       else
           failed_count=$((failed_count + 1))
       fi
+
+      # Also sync delta-manifest files if available
+      download_delta_manifest_files "$tag" "$api_data" || true
   done <<< "$new_releases"
   
   # 清理多余的 checksum 目录，传递已处理的版本列表
