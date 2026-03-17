@@ -140,9 +140,22 @@ jobs:
           
           # 提交变更
           git commit -m "$commit_msg"
-          git push origin HEAD
-          
-          echo "🚀 变更已成功推送到仓库"
+
+          # push with pull-rebase retry to handle concurrent pushes
+          max_retries=3
+          for i in $(seq 1 $max_retries); do
+            if git push origin HEAD; then
+              echo "🚀 变更已成功推送到仓库"
+              break
+            fi
+            if [ "$i" -lt "$max_retries" ]; then
+              echo "⚠️ Push failed (attempt $i/$max_retries), pulling and retrying..."
+              git pull --rebase origin master
+            else
+              echo "❌ Push failed after $max_retries attempts"
+              exit 1
+            fi
+          done
       
       - name: Summary report
         if: always()
