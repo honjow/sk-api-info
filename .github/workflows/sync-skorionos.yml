@@ -36,6 +36,10 @@ on:
   schedule:
     - cron: '0 2 * * *'
 
+concurrency:
+  group: sync-skorionos
+  cancel-in-progress: false
+
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -141,7 +145,7 @@ jobs:
           # 提交变更
           git commit -m "$commit_msg"
 
-          # push with pull-rebase retry to handle concurrent pushes
+          # push with retry to handle concurrent pushes
           max_retries=3
           for i in $(seq 1 $max_retries); do
             if git push origin HEAD; then
@@ -149,8 +153,22 @@ jobs:
               break
             fi
             if [ "$i" -lt "$max_retries" ]; then
-              echo "⚠️ Push failed (attempt $i/$max_retries), pulling and retrying..."
-              git pull --rebase origin master
+              echo "⚠️ Push failed (attempt $i/$max_retries), resetting and retrying..."
+              # Undo local commit, pull latest remote, then redo
+              git reset --soft HEAD~1
+              git reset HEAD .
+              git stash --include-untracked
+              git pull origin master
+              git stash pop || true
+              # Regenerate auto-generated files on top of latest remote
+              rm -rf sk-chimeraos
+              cp -r skorionos sk-chimeraos
+              git add skorionos/ sk-chimeraos/
+              if git diff --cached --quiet; then
+                echo "✨ Changes already present in remote, nothing to commit"
+                break
+              fi
+              git commit -m "$commit_msg"
             else
               echo "❌ Push failed after $max_retries attempts"
               exit 1
