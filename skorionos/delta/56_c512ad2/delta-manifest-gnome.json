@@ -1,0 +1,26 @@
+{
+  "version": "56_c512ad2",
+  "branch": "gnome",
+  "deltas": [
+    {
+      "from_version": "56_11624f0",
+      "from_tag": "56_11624f0",
+      "filename": "skorionos-56_c512ad2-gnome.from_56_11624f0.skdelta",
+      "checksum": "sha256:f7378fd1b35a70ac3614e028ce5c80d7ed9da5cd5f40d07d8e24e0cc10d52d44",
+      "size": 110202300,
+      "full_size": 2410793740,
+      "target_meta_hash": "39f8c394c3fd1ca2f3a26cc5d707671c24fe330e54e271bb3a7ca0aa0d16f0bc",
+      "format": "rsync-batch"
+    },
+    {
+      "from_version": "56_c682679",
+      "from_tag": "56_c682679",
+      "filename": "skorionos-56_c512ad2-gnome.from_56_c682679.skdelta",
+      "checksum": "sha256:c8d460b9eeb59d953d20cbfe32cbb5751a520e60a9974c85ff30257d49180ff2",
+      "size": 115176136,
+      "full_size": 2410793740,
+      "target_meta_hash": "39f8c394c3fd1ca2f3a26cc5d707671c24fe330e54e271bb3a7ca0aa0d16f0bc",
+      "format": "rsync-batch"
+    }
+  ]
+}
