@@ -358,7 +358,8 @@ filter_api_data() {
         .assets[] | {
           browser_download_url,
           state,
-          name
+          name,
+          size
         }
       ]
     }
