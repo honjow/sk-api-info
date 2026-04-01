@@ -1258,6 +1258,668 @@
     ]
   },
   {
+    "created_at": "2026-04-01T19:43:39Z",
+    "prerelease": true,
+    "name": "SkorionOS 55-4 (8549140) ",
+    "tag_name": "55-4_8549140",
+    "assets": [
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/build_info-gnome-core.txt",
+        "state": "uploaded",
+        "name": "build_info-gnome-core.txt",
+        "size": 20481
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/build_info-gnome-full.txt",
+        "state": "uploaded",
+        "name": "build_info-gnome-full.txt",
+        "size": 25960
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/build_info-gnome-nv.txt",
+        "state": "uploaded",
+        "name": "build_info-gnome-nv.txt",
+        "size": 25138
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/build_info-gnome.txt",
+        "state": "uploaded",
+        "name": "build_info-gnome.txt",
+        "size": 24920
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/build_info-hyprland-core.txt",
+        "state": "uploaded",
+        "name": "build_info-hyprland-core.txt",
+        "size": 20649
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/build_info-hyprland-full.txt",
+        "state": "uploaded",
+        "name": "build_info-hyprland-full.txt",
+        "size": 25876
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/build_info-hyprland.txt",
+        "state": "uploaded",
+        "name": "build_info-hyprland.txt",
+        "size": 24862
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/build_info-kde-core.txt",
+        "state": "uploaded",
+        "name": "build_info-kde-core.txt",
+        "size": 22948
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/build_info-kde-full.txt",
+        "state": "uploaded",
+        "name": "build_info-kde-full.txt",
+        "size": 28195
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/build_info-kde-nv.txt",
+        "state": "uploaded",
+        "name": "build_info-kde-nv.txt",
+        "size": 27452
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/build_info-kde.txt",
+        "state": "uploaded",
+        "name": "build_info-kde.txt",
+        "size": 27183
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/container-gnome-core.txt",
+        "state": "uploaded",
+        "name": "container-gnome-core.txt",
+        "size": 100
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/container-gnome-full.txt",
+        "state": "uploaded",
+        "name": "container-gnome-full.txt",
+        "size": 100
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/container-gnome-nv.txt",
+        "state": "uploaded",
+        "name": "container-gnome-nv.txt",
+        "size": 100
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/container-gnome.txt",
+        "state": "uploaded",
+        "name": "container-gnome.txt",
+        "size": 100
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/container-hyprland-core.txt",
+        "state": "uploaded",
+        "name": "container-hyprland-core.txt",
+        "size": 100
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/container-hyprland-full.txt",
+        "state": "uploaded",
+        "name": "container-hyprland-full.txt",
+        "size": 100
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/container-hyprland.txt",
+        "state": "uploaded",
+        "name": "container-hyprland.txt",
+        "size": 100
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/container-kde-core.txt",
+        "state": "uploaded",
+        "name": "container-kde-core.txt",
+        "size": 100
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/container-kde-full.txt",
+        "state": "uploaded",
+        "name": "container-kde-full.txt",
+        "size": 100
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/container-kde-nv.txt",
+        "state": "uploaded",
+        "name": "container-kde-nv.txt",
+        "size": 100
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/container-kde.txt",
+        "state": "uploaded",
+        "name": "container-kde.txt",
+        "size": 100
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/delta-manifest-gnome-core.json",
+        "state": "uploaded",
+        "name": "delta-manifest-gnome-core.json",
+        "size": 1832
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/delta-manifest-gnome-full.json",
+        "state": "uploaded",
+        "name": "delta-manifest-gnome-full.json",
+        "size": 1832
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/delta-manifest-gnome-nv.json",
+        "state": "uploaded",
+        "name": "delta-manifest-gnome-nv.json",
+        "size": 1822
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/delta-manifest-gnome.json",
+        "state": "uploaded",
+        "name": "delta-manifest-gnome.json",
+        "size": 1807
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/delta-manifest-hyprland-core.json",
+        "state": "uploaded",
+        "name": "delta-manifest-hyprland-core.json",
+        "size": 1847
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/delta-manifest-hyprland-full.json",
+        "state": "uploaded",
+        "name": "delta-manifest-hyprland-full.json",
+        "size": 1847
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/delta-manifest-hyprland.json",
+        "state": "uploaded",
+        "name": "delta-manifest-hyprland.json",
+        "size": 1822
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/delta-manifest-kde-core.json",
+        "state": "uploaded",
+        "name": "delta-manifest-kde-core.json",
+        "size": 1822
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/delta-manifest-kde-full.json",
+        "state": "uploaded",
+        "name": "delta-manifest-kde-full.json",
+        "size": 1822
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/delta-manifest-kde-nv.json",
+        "state": "uploaded",
+        "name": "delta-manifest-kde-nv.json",
+        "size": 1812
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/delta-manifest-kde.json",
+        "state": "uploaded",
+        "name": "delta-manifest-kde.json",
+        "size": 1797
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/sha256sum-gnome-core.txt",
+        "state": "uploaded",
+        "name": "sha256sum-gnome-core.txt",
+        "size": 107
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/sha256sum-gnome-full.txt",
+        "state": "uploaded",
+        "name": "sha256sum-gnome-full.txt",
+        "size": 230
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/sha256sum-gnome-nv.txt",
+        "state": "uploaded",
+        "name": "sha256sum-gnome-nv.txt",
+        "size": 226
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/sha256sum-gnome.txt",
+        "state": "uploaded",
+        "name": "sha256sum-gnome.txt",
+        "size": 220
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/sha256sum-hyprland-core.txt",
+        "state": "uploaded",
+        "name": "sha256sum-hyprland-core.txt",
+        "size": 236
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/sha256sum-hyprland-full.txt",
+        "state": "uploaded",
+        "name": "sha256sum-hyprland-full.txt",
+        "size": 236
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/sha256sum-hyprland.txt",
+        "state": "uploaded",
+        "name": "sha256sum-hyprland.txt",
+        "size": 226
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/sha256sum-kde-core.txt",
+        "state": "uploaded",
+        "name": "sha256sum-kde-core.txt",
+        "size": 226
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/sha256sum-kde-full.txt",
+        "state": "uploaded",
+        "name": "sha256sum-kde-full.txt",
+        "size": 226
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/sha256sum-kde-nv.txt",
+        "state": "uploaded",
+        "name": "sha256sum-kde-nv.txt",
+        "size": 222
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/sha256sum-kde.txt",
+        "state": "uploaded",
+        "name": "sha256sum-kde.txt",
+        "size": 216
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-gnome-core.from_55-3_800b5b8.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-gnome-core.from_55-3_800b5b8.skdelta",
+        "size": 347600116
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-gnome-core.from_55-3_e605458.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-gnome-core.from_55-3_e605458.skdelta",
+        "size": 347641320
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-gnome-core.from_55-4_4e0b646.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-gnome-core.from_55-4_4e0b646.skdelta",
+        "size": 190205196
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-gnome-core.from_55-4_699c108.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-gnome-core.from_55-4_699c108.skdelta",
+        "size": 193622932
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-gnome-core.skosys",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-gnome-core.skosys",
+        "size": 1867152036
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-gnome-full.from_55-3_800b5b8.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-gnome-full.from_55-3_800b5b8.skdelta",
+        "size": 641229256
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-gnome-full.from_55-3_e605458.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-gnome-full.from_55-3_e605458.skdelta",
+        "size": 623973216
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-gnome-full.from_55-4_4e0b646.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-gnome-full.from_55-4_4e0b646.skdelta",
+        "size": 296439796
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-gnome-full.from_55-4_699c108.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-gnome-full.from_55-4_699c108.skdelta",
+        "size": 196175512
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-gnome-full.part1-2.skosys",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-gnome-full.part1-2.skosys",
+        "size": 2039480320
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-gnome-full.part2-2.skosys",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-gnome-full.part2-2.skosys",
+        "size": 1425363032
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-gnome-nv.from_55-3_800b5b8.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-gnome-nv.from_55-3_800b5b8.skdelta",
+        "size": 388402984
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-gnome-nv.from_55-3_e605458.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-gnome-nv.from_55-3_e605458.skdelta",
+        "size": 388453248
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-gnome-nv.from_55-4_4e0b646.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-gnome-nv.from_55-4_4e0b646.skdelta",
+        "size": 192347340
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-gnome-nv.from_55-4_699c108.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-gnome-nv.from_55-4_699c108.skdelta",
+        "size": 195806784
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-gnome-nv.part1-2.skosys",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-gnome-nv.part1-2.skosys",
+        "size": 2039480320
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-gnome-nv.part2-2.skosys",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-gnome-nv.part2-2.skosys",
+        "size": 775403600
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-gnome.from_55-3_800b5b8.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-gnome.from_55-3_800b5b8.skdelta",
+        "size": 388327564
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-gnome.from_55-3_e605458.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-gnome.from_55-3_e605458.skdelta",
+        "size": 388367184
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-gnome.from_55-4_4e0b646.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-gnome.from_55-4_4e0b646.skdelta",
+        "size": 192288920
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-gnome.from_55-4_699c108.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-gnome.from_55-4_699c108.skdelta",
+        "size": 195751432
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-gnome.part1-2.skosys",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-gnome.part1-2.skosys",
+        "size": 2039480320
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-gnome.part2-2.skosys",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-gnome.part2-2.skosys",
+        "size": 384996364
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-hyprland-core.from_55-3_800b5b8.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-hyprland-core.from_55-3_800b5b8.skdelta",
+        "size": 376949464
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-hyprland-core.from_55-3_e605458.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-hyprland-core.from_55-3_e605458.skdelta",
+        "size": 376985620
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-hyprland-core.from_55-4_4e0b646.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-hyprland-core.from_55-4_4e0b646.skdelta",
+        "size": 214966248
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-hyprland-core.from_55-4_699c108.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-hyprland-core.from_55-4_699c108.skdelta",
+        "size": 218489316
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-hyprland-core.part1-2.skosys",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-hyprland-core.part1-2.skosys",
+        "size": 2039480320
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-hyprland-core.part2-2.skosys",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-hyprland-core.part2-2.skosys",
+        "size": 240280500
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-hyprland-full.from_55-3_800b5b8.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-hyprland-full.from_55-3_800b5b8.skdelta",
+        "size": 630154188
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-hyprland-full.from_55-3_e605458.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-hyprland-full.from_55-3_e605458.skdelta",
+        "size": 630241272
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-hyprland-full.from_55-4_4e0b646.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-hyprland-full.from_55-4_4e0b646.skdelta",
+        "size": 296426428
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-hyprland-full.from_55-4_699c108.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-hyprland-full.from_55-4_699c108.skdelta",
+        "size": 196209684
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-hyprland-full.part1-2.skosys",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-hyprland-full.part1-2.skosys",
+        "size": 2039480320
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-hyprland-full.part2-2.skosys",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-hyprland-full.part2-2.skosys",
+        "size": 1588383040
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-hyprland.from_55-3_800b5b8.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-hyprland.from_55-3_800b5b8.skdelta",
+        "size": 394259292
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-hyprland.from_55-3_e605458.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-hyprland.from_55-3_e605458.skdelta",
+        "size": 394301072
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-hyprland.from_55-4_4e0b646.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-hyprland.from_55-4_4e0b646.skdelta",
+        "size": 192332196
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-hyprland.from_55-4_699c108.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-hyprland.from_55-4_699c108.skdelta",
+        "size": 195796340
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-hyprland.part1-2.skosys",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-hyprland.part1-2.skosys",
+        "size": 2039480320
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-hyprland.part2-2.skosys",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-hyprland.part2-2.skosys",
+        "size": 548329376
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-kde-core.from_55-3_800b5b8.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-kde-core.from_55-3_800b5b8.skdelta",
+        "size": 378056472
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-kde-core.from_55-3_e605458.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-kde-core.from_55-3_e605458.skdelta",
+        "size": 378075680
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-kde-core.from_55-4_4e0b646.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-kde-core.from_55-4_4e0b646.skdelta",
+        "size": 192278896
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-kde-core.from_55-4_699c108.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-kde-core.from_55-4_699c108.skdelta",
+        "size": 195753044
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-kde-core.part1-2.skosys",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-kde-core.part1-2.skosys",
+        "size": 2039480320
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-kde-core.part2-2.skosys",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-kde-core.part2-2.skosys",
+        "size": 228589268
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-kde-full.from_55-3_800b5b8.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-kde-full.from_55-3_800b5b8.skdelta",
+        "size": 653377760
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-kde-full.from_55-3_e605458.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-kde-full.from_55-3_e605458.skdelta",
+        "size": 653433564
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-kde-full.from_55-4_4e0b646.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-kde-full.from_55-4_4e0b646.skdelta",
+        "size": 296549156
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-kde-full.from_55-4_699c108.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-kde-full.from_55-4_699c108.skdelta",
+        "size": 196299556
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-kde-full.part1-2.skosys",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-kde-full.part1-2.skosys",
+        "size": 2039480320
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-kde-full.part2-2.skosys",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-kde-full.part2-2.skosys",
+        "size": 1903863868
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-kde-nv.from_55-3_800b5b8.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-kde-nv.from_55-3_800b5b8.skdelta",
+        "size": 418600252
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-kde-nv.from_55-3_e605458.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-kde-nv.from_55-3_e605458.skdelta",
+        "size": 418633928
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-kde-nv.from_55-4_4e0b646.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-kde-nv.from_55-4_4e0b646.skdelta",
+        "size": 192462516
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-kde-nv.from_55-4_699c108.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-kde-nv.from_55-4_699c108.skdelta",
+        "size": 195935372
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-kde-nv.part1-2.skosys",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-kde-nv.part1-2.skosys",
+        "size": 2039480320
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-kde-nv.part2-2.skosys",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-kde-nv.part2-2.skosys",
+        "size": 1153315480
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-kde.from_55-3_800b5b8.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-kde.from_55-3_800b5b8.skdelta",
+        "size": 418551724
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-kde.from_55-3_e605458.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-kde.from_55-3_e605458.skdelta",
+        "size": 418568664
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-kde.from_55-4_4e0b646.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-kde.from_55-4_4e0b646.skdelta",
+        "size": 192408260
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-kde.from_55-4_699c108.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-kde.from_55-4_699c108.skdelta",
+        "size": 195885912
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-kde.part1-2.skosys",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-kde.part1-2.skosys",
+        "size": 2039480320
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-4_8549140/skorionos-55-4_8549140-kde.part2-2.skosys",
+        "state": "uploaded",
+        "name": "skorionos-55-4_8549140-kde.part2-2.skosys",
+        "size": 764520612
+      }
+    ]
+  },
+  {
     "created_at": "2026-04-01T16:50:21Z",
     "prerelease": true,
     "name": "SkorionOS 55-4 (699c108) ",
@@ -40214,338 +40876,6 @@
         "state": "uploaded",
         "name": "skorionos-53-7_cc3d876-kde.part2-2.img.xz",
         "size": 835828664
-      }
-    ]
-  },
-  {
-    "created_at": "2025-12-04T10:46:40Z",
-    "prerelease": false,
-    "name": "SkorionOS 53-7 (e8081f8) ",
-    "tag_name": "53-7_e8081f8",
-    "assets": [
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/build_info-gnome-core.txt",
-        "state": "uploaded",
-        "name": "build_info-gnome-core.txt",
-        "size": 19342
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/build_info-gnome-full.txt",
-        "state": "uploaded",
-        "name": "build_info-gnome-full.txt",
-        "size": 24512
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/build_info-gnome-nv.txt",
-        "state": "uploaded",
-        "name": "build_info-gnome-nv.txt",
-        "size": 24250
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/build_info-gnome.txt",
-        "state": "uploaded",
-        "name": "build_info-gnome.txt",
-        "size": 24046
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/build_info-hyprland-core.txt",
-        "state": "uploaded",
-        "name": "build_info-hyprland-core.txt",
-        "size": 19577
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/build_info-hyprland-full.txt",
-        "state": "uploaded",
-        "name": "build_info-hyprland-full.txt",
-        "size": 24494
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/build_info-hyprland.txt",
-        "state": "uploaded",
-        "name": "build_info-hyprland.txt",
-        "size": 24054
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/build_info-kde-core.txt",
-        "state": "uploaded",
-        "name": "build_info-kde-core.txt",
-        "size": 21733
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/build_info-kde-full.txt",
-        "state": "uploaded",
-        "name": "build_info-kde-full.txt",
-        "size": 26797
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/build_info-kde-nv.txt",
-        "state": "uploaded",
-        "name": "build_info-kde-nv.txt",
-        "size": 26493
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/build_info-kde.txt",
-        "state": "uploaded",
-        "name": "build_info-kde.txt",
-        "size": 26238
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/container-gnome-core.txt",
-        "state": "uploaded",
-        "name": "container-gnome-core.txt",
-        "size": 100
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/container-gnome-full.txt",
-        "state": "uploaded",
-        "name": "container-gnome-full.txt",
-        "size": 100
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/container-gnome-nv.txt",
-        "state": "uploaded",
-        "name": "container-gnome-nv.txt",
-        "size": 100
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/container-gnome.txt",
-        "state": "uploaded",
-        "name": "container-gnome.txt",
-        "size": 100
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/container-hyprland-core.txt",
-        "state": "uploaded",
-        "name": "container-hyprland-core.txt",
-        "size": 100
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/container-hyprland-full.txt",
-        "state": "uploaded",
-        "name": "container-hyprland-full.txt",
-        "size": 100
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/container-hyprland.txt",
-        "state": "uploaded",
-        "name": "container-hyprland.txt",
-        "size": 100
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/container-kde-core.txt",
-        "state": "uploaded",
-        "name": "container-kde-core.txt",
-        "size": 100
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/container-kde-full.txt",
-        "state": "uploaded",
-        "name": "container-kde-full.txt",
-        "size": 100
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/container-kde-nv.txt",
-        "state": "uploaded",
-        "name": "container-kde-nv.txt",
-        "size": 100
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/container-kde.txt",
-        "state": "uploaded",
-        "name": "container-kde.txt",
-        "size": 100
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/sha256sum-gnome-core.txt",
-        "state": "uploaded",
-        "name": "sha256sum-gnome-core.txt",
-        "size": 107
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/sha256sum-gnome-full.txt",
-        "state": "uploaded",
-        "name": "sha256sum-gnome-full.txt",
-        "size": 230
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/sha256sum-gnome-nv.txt",
-        "state": "uploaded",
-        "name": "sha256sum-gnome-nv.txt",
-        "size": 226
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/sha256sum-gnome.txt",
-        "state": "uploaded",
-        "name": "sha256sum-gnome.txt",
-        "size": 220
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/sha256sum-hyprland-core.txt",
-        "state": "uploaded",
-        "name": "sha256sum-hyprland-core.txt",
-        "size": 236
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/sha256sum-hyprland-full.txt",
-        "state": "uploaded",
-        "name": "sha256sum-hyprland-full.txt",
-        "size": 236
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/sha256sum-hyprland.txt",
-        "state": "uploaded",
-        "name": "sha256sum-hyprland.txt",
-        "size": 226
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/sha256sum-kde-core.txt",
-        "state": "uploaded",
-        "name": "sha256sum-kde-core.txt",
-        "size": 226
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/sha256sum-kde-full.txt",
-        "state": "uploaded",
-        "name": "sha256sum-kde-full.txt",
-        "size": 226
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/sha256sum-kde-nv.txt",
-        "state": "uploaded",
-        "name": "sha256sum-kde-nv.txt",
-        "size": 222
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/sha256sum-kde.txt",
-        "state": "uploaded",
-        "name": "sha256sum-kde.txt",
-        "size": 216
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/skorionos-53-7_e8081f8-gnome-core.img.xz",
-        "state": "uploaded",
-        "name": "skorionos-53-7_e8081f8-gnome-core.img.xz",
-        "size": 1938582128
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/skorionos-53-7_e8081f8-gnome-full.part1-2.img.xz",
-        "state": "uploaded",
-        "name": "skorionos-53-7_e8081f8-gnome-full.part1-2.img.xz",
-        "size": 2039480320
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/skorionos-53-7_e8081f8-gnome-full.part2-2.img.xz",
-        "state": "uploaded",
-        "name": "skorionos-53-7_e8081f8-gnome-full.part2-2.img.xz",
-        "size": 1115193012
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/skorionos-53-7_e8081f8-gnome-nv.part1-2.img.xz",
-        "state": "uploaded",
-        "name": "skorionos-53-7_e8081f8-gnome-nv.part1-2.img.xz",
-        "size": 2039480320
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/skorionos-53-7_e8081f8-gnome-nv.part2-2.img.xz",
-        "state": "uploaded",
-        "name": "skorionos-53-7_e8081f8-gnome-nv.part2-2.img.xz",
-        "size": 850194564
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/skorionos-53-7_e8081f8-gnome.part1-2.img.xz",
-        "state": "uploaded",
-        "name": "skorionos-53-7_e8081f8-gnome.part1-2.img.xz",
-        "size": 2039480320
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/skorionos-53-7_e8081f8-gnome.part2-2.img.xz",
-        "state": "uploaded",
-        "name": "skorionos-53-7_e8081f8-gnome.part2-2.img.xz",
-        "size": 454839000
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/skorionos-53-7_e8081f8-hyprland-core.part1-2.img.xz",
-        "state": "uploaded",
-        "name": "skorionos-53-7_e8081f8-hyprland-core.part1-2.img.xz",
-        "size": 2039480320
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/skorionos-53-7_e8081f8-hyprland-core.part2-2.img.xz",
-        "state": "uploaded",
-        "name": "skorionos-53-7_e8081f8-hyprland-core.part2-2.img.xz",
-        "size": 321832792
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/skorionos-53-7_e8081f8-hyprland-full.part1-2.img.xz",
-        "state": "uploaded",
-        "name": "skorionos-53-7_e8081f8-hyprland-full.part1-2.img.xz",
-        "size": 2039480320
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/skorionos-53-7_e8081f8-hyprland-full.part2-2.img.xz",
-        "state": "uploaded",
-        "name": "skorionos-53-7_e8081f8-hyprland-full.part2-2.img.xz",
-        "size": 1286143316
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/skorionos-53-7_e8081f8-hyprland.part1-2.img.xz",
-        "state": "uploaded",
-        "name": "skorionos-53-7_e8081f8-hyprland.part1-2.img.xz",
-        "size": 2039480320
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/skorionos-53-7_e8081f8-hyprland.part2-2.img.xz",
-        "state": "uploaded",
-        "name": "skorionos-53-7_e8081f8-hyprland.part2-2.img.xz",
-        "size": 626666136
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/skorionos-53-7_e8081f8-kde-core.part1-2.img.xz",
-        "state": "uploaded",
-        "name": "skorionos-53-7_e8081f8-kde-core.part1-2.img.xz",
-        "size": 2039480320
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/skorionos-53-7_e8081f8-kde-core.part2-2.img.xz",
-        "state": "uploaded",
-        "name": "skorionos-53-7_e8081f8-kde-core.part2-2.img.xz",
-        "size": 302627228
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/skorionos-53-7_e8081f8-kde-full.part1-2.img.xz",
-        "state": "uploaded",
-        "name": "skorionos-53-7_e8081f8-kde-full.part1-2.img.xz",
-        "size": 2039480320
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/skorionos-53-7_e8081f8-kde-full.part2-2.img.xz",
-        "state": "uploaded",
-        "name": "skorionos-53-7_e8081f8-kde-full.part2-2.img.xz",
-        "size": 1859626108
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/skorionos-53-7_e8081f8-kde-nv.part1-2.img.xz",
-        "state": "uploaded",
-        "name": "skorionos-53-7_e8081f8-kde-nv.part1-2.img.xz",
-        "size": 2039480320
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/skorionos-53-7_e8081f8-kde-nv.part2-2.img.xz",
-        "state": "uploaded",
-        "name": "skorionos-53-7_e8081f8-kde-nv.part2-2.img.xz",
-        "size": 1209726040
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/skorionos-53-7_e8081f8-kde.part1-2.img.xz",
-        "state": "uploaded",
-        "name": "skorionos-53-7_e8081f8-kde.part1-2.img.xz",
-        "size": 2039480320
-      },
-      {
-        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/53-7_e8081f8/skorionos-53-7_e8081f8-kde.part2-2.img.xz",
-        "state": "uploaded",
-        "name": "skorionos-53-7_e8081f8-kde.part2-2.img.xz",
-        "size": 835744660
       }
     ]
   }
