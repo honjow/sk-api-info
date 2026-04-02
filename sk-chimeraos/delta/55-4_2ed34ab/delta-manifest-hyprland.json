@@ -1,0 +1,46 @@
+{
+  "version": "55-4_2ed34ab",
+  "branch": "hyprland",
+  "deltas": [
+    {
+      "from_version": "55-4_4e0b646",
+      "from_tag": "55-4_4e0b646",
+      "filename": "skorionos-55-4_2ed34ab-hyprland.from_55-4_4e0b646.skdelta",
+      "checksum": "sha256:89b2678e5a6cd61c09a0cb01aa325cc81889deeded4eeeb3d508ffa35f898cbd",
+      "size": 193384948,
+      "full_size": 2587805300,
+      "target_meta_hash": "0f84aa19c1069438690e2923d8fe0bab8cc3cb7e351f7119e2165df0e6bf299c",
+      "format": "rsync-batch"
+    },
+    {
+      "from_version": "55-3_800b5b8",
+      "from_tag": "55-3_800b5b8",
+      "filename": "skorionos-55-4_2ed34ab-hyprland.from_55-3_800b5b8.skdelta",
+      "checksum": "sha256:572ac0e01ff4772cc387708ba6790f07f1283dda048d863c604383b7ec151b8b",
+      "size": 394255216,
+      "full_size": 2587805300,
+      "target_meta_hash": "0f84aa19c1069438690e2923d8fe0bab8cc3cb7e351f7119e2165df0e6bf299c",
+      "format": "rsync-batch"
+    },
+    {
+      "from_version": "55-4_699c108",
+      "from_tag": "55-4_699c108",
+      "filename": "skorionos-55-4_2ed34ab-hyprland.from_55-4_699c108.skdelta",
+      "checksum": "sha256:304691df22bc50460004ca276d61c81f23225d1cdf3ac39be349747539d3ebb6",
+      "size": 196849092,
+      "full_size": 2587805300,
+      "target_meta_hash": "0f84aa19c1069438690e2923d8fe0bab8cc3cb7e351f7119e2165df0e6bf299c",
+      "format": "rsync-batch"
+    },
+    {
+      "from_version": "55-4_8549140",
+      "from_tag": "55-4_8549140",
+      "filename": "skorionos-55-4_2ed34ab-hyprland.from_55-4_8549140.skdelta",
+      "checksum": "sha256:b29802666c1c581f7440401f9559b25627bfc6302bc2ac40ca4d2eae204ac0d2",
+      "size": 3551156,
+      "full_size": 2587805300,
+      "target_meta_hash": "0f84aa19c1069438690e2923d8fe0bab8cc3cb7e351f7119e2165df0e6bf299c",
+      "format": "rsync-batch"
+    }
+  ]
+}
