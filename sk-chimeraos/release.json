@@ -1,7 +1,7 @@
 [
   {
     "created_at": "2026-04-04T16:52:54Z",
-    "prerelease": true,
+    "prerelease": false,
     "name": "SkorionOS 55-5 (933566c) ",
     "tag_name": "55-5_933566c",
     "assets": [
@@ -328,6 +328,12 @@
         "state": "uploaded",
         "name": "container-kde.txt",
         "size": 100
+      },
+      {
+        "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-5_933566c/skorionos-55-5_933566c-gnome.from_55-4_2ed34ab.skdelta",
+        "state": "uploaded",
+        "name": "skorionos-55-5_933566c-gnome.from_55-4_2ed34ab.skdelta",
+        "size": 263259576
       },
       {
         "browser_download_url": "https://github.com/SkorionOS/skorionos/releases/download/55-5_933566c/skorionos-55-5_933566c-gnome-core.from_55-4_8549140.skdelta",
