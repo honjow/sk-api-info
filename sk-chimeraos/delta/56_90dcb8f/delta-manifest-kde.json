@@ -1,0 +1,26 @@
+{
+  "version": "56_90dcb8f",
+  "branch": "kde",
+  "deltas": [
+    {
+      "from_version": "56_533337c",
+      "from_tag": "56_533337c",
+      "filename": "skorionos-56_90dcb8f-kde.from_56_533337c.skdelta",
+      "checksum": "sha256:8ecd5c08afdf6767fd579be59eb9443a1007d92e95e0d68b35aff9c9d524290d",
+      "size": 306078824,
+      "full_size": 2795967448,
+      "target_meta_hash": "33b47615ad14e069abc7dc847bf2a37776ff10d017b262d7e42bd14368addf8d",
+      "format": "rsync-batch"
+    },
+    {
+      "from_version": "56_845edb5",
+      "from_tag": "56_845edb5",
+      "filename": "skorionos-56_90dcb8f-kde.from_56_845edb5.skdelta",
+      "checksum": "sha256:17df24fc0780c38cd5e6d32bc683dbc65be4fe9208e0138347bf4397372c330a",
+      "size": 303672056,
+      "full_size": 2795967448,
+      "target_meta_hash": "33b47615ad14e069abc7dc847bf2a37776ff10d017b262d7e42bd14368addf8d",
+      "format": "rsync-batch"
+    }
+  ]
+}
