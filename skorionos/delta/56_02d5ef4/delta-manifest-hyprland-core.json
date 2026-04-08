@@ -1,0 +1,26 @@
+{
+  "version": "56_02d5ef4",
+  "branch": "hyprland-core",
+  "deltas": [
+    {
+      "from_version": "56_90dcb8f",
+      "from_tag": "56_90dcb8f",
+      "filename": "skorionos-56_02d5ef4-hyprland-core.from_56_90dcb8f.skdelta",
+      "checksum": "sha256:f10c3033696f24730be34569cb2d0e4164a95de5917c59669a4d9e2f0a1eb8a8",
+      "size": 328775060,
+      "full_size": 2277039040,
+      "target_meta_hash": "c67a3ee3e91f706a2e307bea331402946ecadf8932dfff9f5d65799910e79857",
+      "format": "rsync-batch"
+    },
+    {
+      "from_version": "56_845edb5",
+      "from_tag": "56_845edb5",
+      "filename": "skorionos-56_02d5ef4-hyprland-core.from_56_845edb5.skdelta",
+      "checksum": "sha256:32482f14ceac6e89b183988be7d9506f1255cb8f44918d4b7b2da5b6ff7d9448",
+      "size": 349274740,
+      "full_size": 2277039040,
+      "target_meta_hash": "c67a3ee3e91f706a2e307bea331402946ecadf8932dfff9f5d65799910e79857",
+      "format": "rsync-batch"
+    }
+  ]
+}
