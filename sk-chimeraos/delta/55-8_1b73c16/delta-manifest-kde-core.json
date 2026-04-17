@@ -1,0 +1,66 @@
+{
+  "version": "55-8_1b73c16",
+  "branch": "kde-core",
+  "deltas": [
+    {
+      "from_version": "55-8_6a551e4",
+      "from_tag": "55-8_6a551e4",
+      "filename": "skorionos-55-8_1b73c16-kde-core.from_55-8_6a551e4.skdelta",
+      "checksum": "sha256:5d6c546939eeb3d37646f83bd0f6cd32f52645cb35972dcd0139bfe49ac33962",
+      "size": 69087556,
+      "full_size": 2277563908,
+      "target_meta_hash": "39cf072d22555a8879af90f51246bd77784755975cad7a03a6e32c86d9c54f4a",
+      "format": "rsync-batch"
+    },
+    {
+      "from_version": "55-7_7aeb136",
+      "from_tag": "55-7_7aeb136",
+      "filename": "skorionos-55-8_1b73c16-kde-core.from_55-7_7aeb136.skdelta",
+      "checksum": "sha256:0dd538a8d743a318bc9258e495cbd22e86595f72bca6a7d05e32786c8bd954d7",
+      "size": 307536928,
+      "full_size": 2277563908,
+      "target_meta_hash": "39cf072d22555a8879af90f51246bd77784755975cad7a03a6e32c86d9c54f4a",
+      "format": "rsync-batch"
+    },
+    {
+      "from_version": "55-6_3365803",
+      "from_tag": "55-6_3365803",
+      "filename": "skorionos-55-8_1b73c16-kde-core.from_55-6_3365803.skdelta",
+      "checksum": "sha256:2b79eba89450108df5a53a86b6d5320552b7c06097d3bf26f0fb926cf2b3d8f8",
+      "size": 320776640,
+      "full_size": 2277563908,
+      "target_meta_hash": "39cf072d22555a8879af90f51246bd77784755975cad7a03a6e32c86d9c54f4a",
+      "format": "rsync-batch"
+    },
+    {
+      "from_version": "55-5_3e74b92",
+      "from_tag": "55-5_3e74b92",
+      "filename": "skorionos-55-8_1b73c16-kde-core.from_55-5_3e74b92.skdelta",
+      "checksum": "sha256:9cf833c02e7c63086223a7b221c827e5dceb4a38c8bb54f0bb55fc3c43eca1e8",
+      "size": 630416020,
+      "full_size": 2277563908,
+      "target_meta_hash": "39cf072d22555a8879af90f51246bd77784755975cad7a03a6e32c86d9c54f4a",
+      "format": "rsync-batch"
+    },
+    {
+      "from_version": "55-5_0c87ab7",
+      "from_tag": "55-5_0c87ab7",
+      "filename": "skorionos-55-8_1b73c16-kde-core.from_55-5_0c87ab7.skdelta",
+      "checksum": "sha256:1d2c972e1a7f5b456d5fe6a6d37ec547bd544cdec9eebadf31b14a772e257b62",
+      "size": 630471532,
+      "full_size": 2277563908,
+      "target_meta_hash": "39cf072d22555a8879af90f51246bd77784755975cad7a03a6e32c86d9c54f4a",
+      "format": "rsync-batch"
+    },
+    {
+      "from_version": "55-8_5b6dbba",
+      "from_tag": "55-8_5b6dbba",
+      "filename": "skorionos-55-8_1b73c16-kde-core.from_55-8_5b6dbba.skdelta",
+      "checksum": "sha256:32799fac9e90e04a8677455ffc126541b71a682d6516d26416026f9990e46864",
+      "size": 69075024,
+      "full_size": 2277563908,
+      "target_meta_hash": "39cf072d22555a8879af90f51246bd77784755975cad7a03a6e32c86d9c54f4a",
+      "format": "rsync-batch"
+    }
+  ]
+}
