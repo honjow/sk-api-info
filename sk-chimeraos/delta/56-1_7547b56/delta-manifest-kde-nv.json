@@ -1,0 +1,56 @@
+{
+  "version": "56-1_7547b56",
+  "branch": "kde-nv",
+  "deltas": [
+    {
+      "from_version": "55-12_095a448",
+      "from_tag": "55-12_095a448",
+      "filename": "skorionos-56-1_7547b56-kde-nv.from_55-12_095a448.skdelta",
+      "checksum": "sha256:d8c0947ccec6b83ccac97b58492585f2bade3208beaba57503ba0fe8c4717aae",
+      "size": 1868043260,
+      "full_size": 3709846968,
+      "target_meta_hash": "1614a4f63e720f2cb9fcfd85dc45515af5c0b71d9c4ff703ede9e66e20655789",
+      "format": "rsync-batch"
+    },
+    {
+      "from_version": "56_71deed1",
+      "from_tag": "56_71deed1",
+      "filename": "skorionos-56-1_7547b56-kde-nv.from_56_71deed1.skdelta",
+      "checksum": "sha256:6efdc5910d54b4651f1b7cd1c0993884c258015f08cfd37bc8282f883829dd4f",
+      "size": 1346093860,
+      "full_size": 3709846968,
+      "target_meta_hash": "1614a4f63e720f2cb9fcfd85dc45515af5c0b71d9c4ff703ede9e66e20655789",
+      "format": "rsync-batch"
+    },
+    {
+      "from_version": "56_2ddc28d",
+      "from_tag": "56_2ddc28d",
+      "filename": "skorionos-56-1_7547b56-kde-nv.from_56_2ddc28d.skdelta",
+      "checksum": "sha256:c43d8237b152032f81ac85b6b91d3fdd58370acbba05490f6ea772eec9f88dde",
+      "size": 1342448292,
+      "full_size": 3709846968,
+      "target_meta_hash": "1614a4f63e720f2cb9fcfd85dc45515af5c0b71d9c4ff703ede9e66e20655789",
+      "format": "rsync-batch"
+    },
+    {
+      "from_version": "56-1_929f4dd",
+      "from_tag": "56-1_929f4dd",
+      "filename": "skorionos-56-1_7547b56-kde-nv.from_56-1_929f4dd.skdelta",
+      "checksum": "sha256:be2d3c347b9436f88b65c23c2d9c280ec41c80ca0ceffaf16a4aee10154b36a1",
+      "size": 116402208,
+      "full_size": 3709846968,
+      "target_meta_hash": "1614a4f63e720f2cb9fcfd85dc45515af5c0b71d9c4ff703ede9e66e20655789",
+      "format": "rsync-batch"
+    },
+    {
+      "from_version": "55-11_3c83550",
+      "from_tag": "55-11_3c83550",
+      "filename": "skorionos-56-1_7547b56-kde-nv.from_55-11_3c83550.skdelta",
+      "checksum": "sha256:a90e97b5c78bc3f77ae2c7ec84ca6d5b4043348f86e9018f220ff4c08a050df3",
+      "size": 2016828724,
+      "full_size": 3709846968,
+      "target_meta_hash": "1614a4f63e720f2cb9fcfd85dc45515af5c0b71d9c4ff703ede9e66e20655789",
+      "format": "rsync-batch"
+    }
+  ]
+}
