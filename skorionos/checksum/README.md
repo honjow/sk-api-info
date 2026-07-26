@@ -19,7 +19,7 @@ checksum/
 
 ## 最新版本
 
-最新版本: **56-1_fe9986b**
+最新版本: **57_33520b7**
 
 最新版本包含的 checksum 文件：
 - sha256sum-kde-core.txt
@@ -35,4 +35,4 @@ checksum/
 - sha256sum-gnome-core.txt
 
 ---
-*最后更新: 2026-07-26 00:19:50 UTC*
+*最后更新: 2026-07-26 02:31:25 UTC*

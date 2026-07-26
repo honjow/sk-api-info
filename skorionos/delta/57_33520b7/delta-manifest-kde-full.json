@@ -1,0 +1,31 @@
+{
+  "version": "57_33520b7",
+  "branch": "kde-full",
+  "deltas": [
+    {
+      "from_version": "56_114a6a4",
+      "from_tag": "56_114a6a4",
+      "filename": "skorionos-57_33520b7-kde-full.from_56_114a6a4.skdelta",
+      "checksum": "sha256:33b6ca1a2e273ab76778c839a3bced2b1f0ee1336141f9bf72fb7dd9f6fdd546",
+      "size": 2412702804,
+      "full_size": 4359298404,
+      "target_meta_hash": "cd017f1e724e91bf0e47ca5ef1349622ecbd31a045bc86988618b7e7320e98c7",
+      "format": "rsync-batch",
+      "parts": 2,
+      "part_checksums": [
+        "sha256:61425fdc542917e1b1fb05d14f6a4f594b1598eb6291382561ebc07b6a6125d7",
+        "sha256:3aa606df865e180a61dadcd04d40952c60b2c5da5b7980fcc063871778b23671"
+      ]
+    },
+    {
+      "from_version": "57_9a97fcd",
+      "from_tag": "57_9a97fcd",
+      "filename": "skorionos-57_33520b7-kde-full.from_57_9a97fcd.skdelta",
+      "checksum": "sha256:b937a0f03e48a192d7a1b1680a9c32e306066a2f7a99f16b2b274ed8ace78d42",
+      "size": 874304936,
+      "full_size": 4359298404,
+      "target_meta_hash": "cd017f1e724e91bf0e47ca5ef1349622ecbd31a045bc86988618b7e7320e98c7",
+      "format": "rsync-batch"
+    }
+  ]
+}
