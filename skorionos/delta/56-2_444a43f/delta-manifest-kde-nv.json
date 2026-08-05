@@ -1,0 +1,86 @@
+{
+  "version": "56-2_444a43f",
+  "branch": "kde-nv",
+  "deltas": [
+    {
+      "from_version": "55-12_095a448",
+      "from_tag": "55-12_095a448",
+      "filename": "skorionos-56-2_444a43f-kde-nv.from_55-12_095a448.skdelta",
+      "checksum": "sha256:4b435994a7073d367614946d1506893213c30b56a9b162dc3d9003ea113c2d41",
+      "size": 2116997236,
+      "full_size": 3704623368,
+      "target_meta_hash": "560f40940a7d99afe3e2e01658abf3756b2d45e562078e963f41ad846e4c5a09",
+      "format": "rsync-batch",
+      "parts": 2,
+      "part_checksums": [
+        "sha256:1ac9049aba70c010e0d1b5a1cf3f518d57f56ac076162d692a6dd170c2d1de01",
+        "sha256:cb761b7b998958e19456406be84dfbed3a3d564f2073c8bd6195ff301ab9f122"
+      ]
+    },
+    {
+      "from_version": "55-11_3c83550",
+      "from_tag": "55-11_3c83550",
+      "filename": "skorionos-56-2_444a43f-kde-nv.from_55-11_3c83550.skdelta",
+      "checksum": "sha256:2cdb41c771346e2165e97626e0dd0d97215125a67021686b49628e45b95bd701",
+      "size": 2258285204,
+      "full_size": 3704623368,
+      "target_meta_hash": "560f40940a7d99afe3e2e01658abf3756b2d45e562078e963f41ad846e4c5a09",
+      "format": "rsync-batch",
+      "parts": 2,
+      "part_checksums": [
+        "sha256:2113da1707417454a3c3494a2854861f02fd47a29aadb5724e47d7f431aef2eb",
+        "sha256:e9de1938361542c8b2dae5429aef87bf365415e1550e65284fece93008438fc7"
+      ]
+    },
+    {
+      "from_version": "56-2_5d0322c",
+      "from_tag": "56-2_5d0322c",
+      "filename": "skorionos-56-2_444a43f-kde-nv.from_56-2_5d0322c.skdelta",
+      "checksum": "sha256:63dc219ea3a9b7e11afa63050c3efe13cd7f6fa6dbe8909778aaa9f65e8486fa",
+      "size": 10343448,
+      "full_size": 3704623368,
+      "target_meta_hash": "560f40940a7d99afe3e2e01658abf3756b2d45e562078e963f41ad846e4c5a09",
+      "format": "rsync-batch"
+    },
+    {
+      "from_version": "56-1_89e7d83",
+      "from_tag": "56-1_89e7d83",
+      "filename": "skorionos-56-2_444a43f-kde-nv.from_56-1_89e7d83.skdelta",
+      "checksum": "sha256:2137ed5ec970194e3bf6fc6dd0d0ca426059fbf7c1f4ee8fa3cc1875c688559c",
+      "size": 1064988108,
+      "full_size": 3704623368,
+      "target_meta_hash": "560f40940a7d99afe3e2e01658abf3756b2d45e562078e963f41ad846e4c5a09",
+      "format": "rsync-batch"
+    },
+    {
+      "from_version": "56_71deed1",
+      "from_tag": "56_71deed1",
+      "filename": "skorionos-56-2_444a43f-kde-nv.from_56_71deed1.skdelta",
+      "checksum": "sha256:bcc8dff7004febac138c6942fc8a5149a4397058003abfa18c39d70d46982658",
+      "size": 1640233048,
+      "full_size": 3704623368,
+      "target_meta_hash": "560f40940a7d99afe3e2e01658abf3756b2d45e562078e963f41ad846e4c5a09",
+      "format": "rsync-batch"
+    },
+    {
+      "from_version": "56_2ddc28d",
+      "from_tag": "56_2ddc28d",
+      "filename": "skorionos-56-2_444a43f-kde-nv.from_56_2ddc28d.skdelta",
+      "checksum": "sha256:9ac1f5842a2d1720cf6999a936a81087779e9c0abad98011b649abf43d9d0dd9",
+      "size": 1637503560,
+      "full_size": 3704623368,
+      "target_meta_hash": "560f40940a7d99afe3e2e01658abf3756b2d45e562078e963f41ad846e4c5a09",
+      "format": "rsync-batch"
+    },
+    {
+      "from_version": "56-2_3676825",
+      "from_tag": "56-2_3676825",
+      "filename": "skorionos-56-2_444a43f-kde-nv.from_56-2_3676825.skdelta",
+      "checksum": "sha256:cdd1883a9f3c0792144a2d086395509869002e40494692c942e69f1ed854c534",
+      "size": 237037396,
+      "full_size": 3704623368,
+      "target_meta_hash": "560f40940a7d99afe3e2e01658abf3756b2d45e562078e963f41ad846e4c5a09",
+      "format": "rsync-batch"
+    }
+  ]
+}
