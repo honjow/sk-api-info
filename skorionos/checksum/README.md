@@ -35,4 +35,4 @@ checksum/
 - sha256sum-hyprland-core.txt
 
 ---
-*最后更新: 2026-08-25 03:00:38 UTC*
+*最后更新: 2026-08-26 03:05:09 UTC*
