@@ -35,4 +35,8 @@ checksum/
 - sha256sum-hyprland-core.txt
 
 ---
+<<<<<<< Updated upstream
 *最后更新: 2026-09-02 06:52:10 UTC*
+=======
+*最后更新: 2026-09-02 06:53:10 UTC*
+>>>>>>> Stashed changes
