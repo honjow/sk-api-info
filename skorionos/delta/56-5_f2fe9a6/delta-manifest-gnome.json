@@ -1,0 +1,66 @@
+{
+  "version": "56-5_f2fe9a6",
+  "branch": "gnome",
+  "deltas": [
+    {
+      "from_version": "56-2_444a43f",
+      "from_tag": "56-2_444a43f",
+      "filename": "skorionos-56-5_f2fe9a6-gnome.from_56-2_444a43f.skdelta",
+      "checksum": "sha256:44bd6806950e430d451e0fad564782c69bf1e61b29566bdf6e5521783961c5a9",
+      "size": 1170329592,
+      "full_size": 2630755604,
+      "target_meta_hash": "477ae9e6b44a09b289d366929f0be2df5a5fa0f9038edc98a91bd7216b7a4381",
+      "format": "rsync-batch"
+    },
+    {
+      "from_version": "56_2ddc28d",
+      "from_tag": "56_2ddc28d",
+      "filename": "skorionos-56-5_f2fe9a6-gnome.from_56_2ddc28d.skdelta",
+      "checksum": "sha256:7083142c377cb8961f8b0c66c15ed30c17889f140886ca0fd68780f430fea371",
+      "size": 1332845468,
+      "full_size": 2630755604,
+      "target_meta_hash": "477ae9e6b44a09b289d366929f0be2df5a5fa0f9038edc98a91bd7216b7a4381",
+      "format": "rsync-batch"
+    },
+    {
+      "from_version": "56-1_89e7d83",
+      "from_tag": "56-1_89e7d83",
+      "filename": "skorionos-56-5_f2fe9a6-gnome.from_56-1_89e7d83.skdelta",
+      "checksum": "sha256:74b64689cdc10de321d7748442ad3f40166975239cbbbf20a5395830718fb857",
+      "size": 1221751844,
+      "full_size": 2630755604,
+      "target_meta_hash": "477ae9e6b44a09b289d366929f0be2df5a5fa0f9038edc98a91bd7216b7a4381",
+      "format": "rsync-batch"
+    },
+    {
+      "from_version": "56-4_a5829e0",
+      "from_tag": "56-4_a5829e0",
+      "filename": "skorionos-56-5_f2fe9a6-gnome.from_56-4_a5829e0.skdelta",
+      "checksum": "sha256:d2112b0b439453ce0f2503e89c6e14ab355ed5ad4fec03a3723915f726a31610",
+      "size": 16590620,
+      "full_size": 2630755604,
+      "target_meta_hash": "477ae9e6b44a09b289d366929f0be2df5a5fa0f9038edc98a91bd7216b7a4381",
+      "format": "rsync-batch"
+    },
+    {
+      "from_version": "56-4_2b4970c",
+      "from_tag": "56-4_2b4970c",
+      "filename": "skorionos-56-5_f2fe9a6-gnome.from_56-4_2b4970c.skdelta",
+      "checksum": "sha256:68bacfd5075965c12ee6c5c1a06319403678795a2b7a46cb265b0e3bb69425a5",
+      "size": 17328908,
+      "full_size": 2630755604,
+      "target_meta_hash": "477ae9e6b44a09b289d366929f0be2df5a5fa0f9038edc98a91bd7216b7a4381",
+      "format": "rsync-batch"
+    },
+    {
+      "from_version": "56-3_9d3fe89",
+      "from_tag": "56-3_9d3fe89",
+      "filename": "skorionos-56-5_f2fe9a6-gnome.from_56-3_9d3fe89.skdelta",
+      "checksum": "sha256:780146f25a1da36854909395f23a7a2373a0d2914d26a5b7344565d7137d7e15",
+      "size": 943005224,
+      "full_size": 2630755604,
+      "target_meta_hash": "477ae9e6b44a09b289d366929f0be2df5a5fa0f9038edc98a91bd7216b7a4381",
+      "format": "rsync-batch"
+    }
+  ]
+}
