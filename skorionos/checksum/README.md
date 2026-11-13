@@ -19,7 +19,7 @@ checksum/
 
 ## 最新版本
 
-最新版本: **56-6_fb9e111**
+最新版本: **56-7_90fa4c2**
 
 最新版本包含的 checksum 文件：
 - sha256sum-gnome.txt
@@ -35,4 +35,4 @@ checksum/
 - sha256sum-hyprland.txt
 
 ---
-*最后更新: 2026-11-13 09:08:30 UTC*
+*最后更新: 2026-11-13 22:00:44 UTC*
