@@ -80,7 +80,12 @@
       "size": 2465925236,
       "full_size": 4332430068,
       "target_meta_hash": "2a8d03c2f00a39dfc0b09d5eb7da1b952b825ee0596719b9b70d1035543c4eaa",
-      "format": "rsync-batch"
+      "format": "rsync-batch",
+      "parts": 2,
+      "part_checksums": [
+        "sha256:393a5dad8c13e6ca18c11c34b5aac8bee59a08f79367303c837c82a336b0dad1",
+        "sha256:922eb7ade75f67d214a3f894d780f72c9e44e0603de4be58182bb35bbee7637e"
+      ]
     }
   ]
 }
